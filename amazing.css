@@ -1,6 +1,4 @@
-body{
- background-color: black;
-}
+
 header{
   display: flex;
   background-color: black;
@@ -11,6 +9,8 @@ nav{
   display: flex;
   align-items: center;
   padding-top: 60px;
+  background-color: black;
+  color: white;
 }
 .nav.nav-tabs{
     font-size: 20px;
@@ -24,22 +24,30 @@ nav{
     text-decoration: none;
     color: black;
     background-color: white;
+    transition: opacity 1s ease-in-out;
 }
-
+.nav.nav-tabs a:hover{
+  opacity: 0.5;
+}
   .footer {
     padding: 10px;
     text-align: center;
     margin-top: 700px;
   }
-  .p{
-    font-weight: bolder;
+  .search{
+    gap:inherit;
   }
-.search{
-  position: absolute;
-  margin-left: 800px;
-  margin-bottom: 100px;
-  border-radius: 10px;
-  width: 350px;
-}
-
-  
+  .div#outer{
+    position: fixed;
+  }
+  .visitor-count {
+    font-size: 16px;
+    font-weight: bold;
+    /* color: white; */
+  }
+  #menu li a:hover {
+    color: red;
+  }
+  #menu li a:active {
+    color: blue;
+  }

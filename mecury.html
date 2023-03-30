@@ -8,94 +8,88 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="amazing.css">
+  <script src="index.js"></script>
 </head>
   <body>
-      <header class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a href="home.html"><img src="logo.png"></a>
-          <form class="search d-flex justify-content-between">
-            <input class="form-control me-12" type="search" placeholder="Search" aria-label="Search">
+    <header class="navbar navbar-expand-lg navbar-collapse-sm">
+      <div class="container-fluid">
+        <a href="home.html"><img src="img/logo.png"></a>
+        <div class="search-container">
+          <form class="search d-flex ">
+            <input class="form-control me-2" type="searchbar" id="searchbar" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
-      <nav class="collapse navbar-collapse justify-content-end">
-      <ul class="nav nav-tabs container pt-9">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Lasted News</a>
-          </li>
-          <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Planet</a>
+          <div id="search-results"></div>
+        </div>
+      </div>
+    </header>  
+    <nav class="navbar navbar-expand-lg navbar-collapse-sm">
+    <ul class="nav nav-tabs container pt-10">
+      <li class="dropdown" id="menu">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Star Gazing</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="where.html">Best place for Gazing</a></li>
+          <li><a class="dropdown-item" href="#">What we can see</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown" id="menu">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Planet</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="mecury.html">Mecury</a></li>
+            <li><a class="dropdown-item" href="venus.html">Venus</a></li>
+            <li><a class="dropdown-item" href="#">Earth</a></li>
+            <li><a class="dropdown-item" href="#">Mars</a></li>
+            <li><a class="dropdown-item" href="#">Jupiter</a></li>
+            <li><a class="dropdown-item" href="#">Saturn</a></li>
+            <li><a class="dropdown-item" href="#">Uranus</a></li>
+            <li><a class="dropdown-item" href="#">Neptune</a></li>
+          </ul>
+        </li> 
+        <li class="nav-item dropdown" id="menu">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Star and Asteroid</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="mecury.html">Mecury</a></li>
-              <li><a class="dropdown-item" href="venus.html">Venus</a></li>
-              <li><a class="dropdown-item" href="earth.html">Earth</a></li>
-              <li><a class="dropdown-item" href="mars.html">Mars</a></li>
-              <li><a class="dropdown-item" href="jupiter.html">Jupiter</a></li>
-              <li><a class="dropdown-item" href="saturn.html">Saturn</a></li>
-              <li><a class="dropdown-item" href="uranus.html">Uranus</a></li>
-              <li><a class="dropdown-item" href="neptune.html">Neptune</a></li>
+              <li><a class="dropdown-item" href="sun.html">Sun</a></li>
+              <li><a class="dropdown-item" href="#">Moon</a></li>
+              <li><a class="dropdown-item" href="#">Haley</a></li>
+              <li><a class="dropdown-item" href="#">Haley-Bopp</a></li>
+              <li><a class="dropdown-item" href="#">Jupiter</a></li>
+              <li><a class="dropdown-item" href="#">Saturn</a></li>
+              <li><a class="dropdown-item" href="#">Uranus</a></li>
+              <li><a class="dropdown-item" href="#">Neptune</a></li>
             </ul>
           </li> 
-          <li class="dropdown">
-            <a class="nav-link dropdown-toggle" id="dropdownmenubutton"data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Star and Asteroid</a>
-              <ul class="dropdown-menu" id="dropdownmenubutton">
-                <div class="dropdown-item">
-                  <div class="row"> 
-                  <a class="dropdown-item" href="#">Star:</a>
-                    <div class="col">
-                      <a href="#">Sun</a>
-                    </div>
-                    <div class="col">
-                      <a href="#">Moon</a>
-                    </div>
-                  </div>
-                  <div class="row"> 
-                  <a class="dropdown-item" href="#">Asteroid:</a>
-                    <div class="col">
-                      <a href="#">Haley</a>
-                    </div>
-                    <div class="col">
-                      <a href="#">Mona</a>
-                    </div>
-                  </div>
-                </div>
-              </ul>
-          </li>
-          <li class="dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Constellation</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Link 1</a></li>
-              <li><a class="dropdown-item" href="#">Link 2</a></li>
-              <li><a class="dropdown-item" href="#">Link 3</a></li>
-              <li><a class="dropdown-item" href="#">Link 4</a></li>
-              <li><a class="dropdown-item" href="#">Link 5</a></li>
-              <li><a class="dropdown-item" href="#">Link 6</a></li>
-              <li><a class="dropdown-item" href="#">Link 6</a></li>
-              <li><a class="dropdown-item" href="#">Link 6</a></li>
-              <li><a class="dropdown-item" href="#">Link 6</a></li>
-              <li><a class="dropdown-item" href="#">Link 6</a></li>
-              <li><a class="dropdown-item" href="#">Link 6</a></li>
-              <li><a class="dropdown-item" href="#">Link 6</a></li>
-            </ul>
-          </li>
-          <li class=" dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">History</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Link 1</a></li>
-              <li><a class="dropdown-item" href="#">Link 2</a></li>
-              <li><a class="dropdown-item" href="#">Link 3</a></li>
-              <li><a class="dropdown-item" href="#">Link 4</a></li>
-              <li><a class="dropdown-item" href="#">Link 5</a></li>
-              <li><a class="dropdown-item" href="#">Link 6</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Contact Us</a>
-          </li>
-      </ul>
-      </nav>
-    </div>
-    </header>
+        <li class="dropdown" id="menu">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Constellation</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="aries.html">Aries</a></li>
+            <li><a class="dropdown-item" href="#">Taurus</a></li>
+            <li><a class="dropdown-item" href="#">Gemini</a></li>
+            <li><a class="dropdown-item" href="#">Cancer</a></li>
+            <li><a class="dropdown-item" href="#">Leo</a></li>
+            <li><a class="dropdown-item" href="#">Virgo</a></li>
+            <li><a class="dropdown-item" href="#">Libra</a></li>
+            <li><a class="dropdown-item" href="#">Scorpio</a></li>
+            <li><a class="dropdown-item" href="#">Sagittarius</a></li>
+            <li><a class="dropdown-item" href="#">Capricorn</a></li>
+            <li><a class="dropdown-item" href="#">Aquarius</a></li>
+            <li><a class="dropdown-item" href="#">Pisces</a></li>
+          </ul>
+        </li>
+        <li class=" dropdown" id="menu">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">History</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">The Appear of Universe</a></li>
+            <li><a class="dropdown-item" href="#">Knowledge of Human</a></li>
+            <li><a class="dropdown-item" href="#">Now and Future</a></li>
+          </ul>
+        </li>
+        <li class="nav-item" id="menu">
+          <a class="nav-link active" href="#">Contact Us</a>
+        </li>
+    </ul>
+  </nav>
     <div class="main" id="overview"></div>
+    <h1 style="text-align: center; color: black; background-color: white;"><strong>MECURY</strong></h1>
     <div class="row">
       <div class="col-sm-2" style="background-color: white;" >
         <h2>Quick facts:</h2>
@@ -160,7 +154,7 @@ Despite its proximity to the Sun, Mercury is not the hottest planet in our solar
   <br></br>
   <div class="main" id="namesake"></div>
   <h1>Namesake</h1> 
-  <div>Mercury is appropriately named for the swiftest of the ancient Roman gods.</div>
+  <div>Mercury is appropriately named for the swiftest of the ancient Roman gods. In Roman religion, Mecury is god of shopkeepers and merchants, travelers and transporters of goods, and thieves and tricksters </div>
   <br></br>
   <div class="main" id="potenialforlife"></div>
   <h1>Potential for Life</h1>
@@ -216,34 +210,34 @@ Despite its proximity to the Sun, Mercury is not the hottest planet in our solar
   <h1>Magnetosphere</h1>
   <div>Mercury's magnetic field is offset relative to the planet's equator. Though Mercury's magnetic field at the surface has just 1% the strength of Earth's, it interacts with the magnetic field of the solar wind to sometimes create intense magnetic tornadoes that funnel the fast, hot solar wind plasma down to the surface of the planet. When the ions strike the surface, they knock off neutrally charged atoms and send them on a loop high into the sky.</div>
 </div> 
-  <div class="col-sm-2" style="background-color: white;">
+  <div class="col-md-2" style="background-color: white;">
     <div id="outer">
-  <h4>On this page</h4>
-  <a href="#overview">Overview</a>
-  <br></br>
-  <a href="#namesake">Namesake</a>
-  <br></br>
-  <a href="#potenialforlife">Potenial for life</a>
-  <br></br>
-  <a href="#sizeanddistance">Size and distance</a>
-  <br></br>
-  <a href="#orbitandrotation">Orbit and rotation</a>
-  <br></br>
-  <a href="#moons">Moons</a>
-  <br></br>
-  <a href="#rings">Rings</a>
-  <br></br>
-  <a href="#formation">Formation</a>
-  <br></br>
-  <a href="#structure">Structure</a>
-  <br></br>
-  <a href="#surface">Surface</a>
-  <br></br>
-  <a href="#atmosphere">Atmosphere</a>
-  <br></br>
-  <a href="#magnetosphere">Magnetosphere</a>
-</div>
-</div>
+      <h4>On this page</h4>
+      <a href="#overview">Overview</a>
+      <br></br>
+      <a href="#namesake">Namesake</a>
+      <br></br>
+      <a href="#potenialforlife">Potenial for life</a>
+      <br></br>
+      <a href="#sizeanddistance">Size and distance</a>
+      <br></br>
+      <a href="#orbitandrotation">Orbit and rotation</a>
+      <br></br>
+      <a href="#moons">Moons</a>
+      <br></br>
+      <a href="#rings">Rings</a>
+      <br></br>
+      <a href="#formation">Formation</a>
+      <br></br>
+      <a href="#structure">Structure</a>
+      <br></br>
+      <a href="#surface">Surface</a>
+      <br></br>
+      <a href="#atmosphere">Atmosphere</a>
+      <br></br>
+      <a href="#magnetosphere">Magnetosphere</a>
+    </div>
+  </div>
 </body>
   <footer>
     <div class="footer">Copyright © ABC Team - April, 2020</div>
