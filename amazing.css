@@ -37,8 +37,9 @@ nav{
   .search{
     gap:inherit;
   }
-  .div#outer{
-    position: fixed;
+  #outer{
+    position: relative;
+    overflow: auto;
   }
   .visitor-count {
     font-size: 16px;
@@ -50,4 +51,9 @@ nav{
   }
   #menu li a:active {
     color: blue;
+  }
+  table th, table td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
   }

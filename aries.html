@@ -1,99 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aries</title>
-    <script src="index.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="amazing.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <script src="index.js"></script>
+  <script async src="https://api.countapi.xyz/hit/astronomy.com/visits?callback=cb"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="amazing.css">
 </head>
-<body>
-  <header class="navbar navbar-expand-lg navbar-collapse-sm">
-    <div class="container-fluid">
-      <a href="home.html"><img src="img/logo.png"></a>
-      <div class="search-container">
-        <form class="search d-flex ">
-          <input class="form-control me-2" type="searchbar" id="searchbar" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-        <div id="search-results"></div>
+  <body>
+    <header class="navbar navbar-expand-lg navbar-collapse-sm">
+      <div class="container-fluid">
+        <a href="home.html"><img src="img/logo.png"></a>
+        <div class="col-10" style="color: white; font-weight: bolder; font-size: large;">
+          Number of visitors: <span id="visits"></span>
+        </div>
       </div>
-    </div>
-  </header>  
-  <nav class="navbar navbar-expand-lg navbar-collapse-sm">
-  <ul class="nav nav-tabs container pt-10">
-    <li class="nav-item dropdown" id="menu">
-      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Star Gazing</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="where.html">Best place for Gazing</a></li>
-        <li><a class="dropdown-item" href="#">What we can see</a></li>
-      </ul>
-    </li>
-    <li class="nav-item dropdown" id="menu">
-      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Planet</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="mecury.html">Mecury</a></li>
-          <li><a class="dropdown-item" href="venus.html">Venus</a></li>
-          <li><a class="dropdown-item" href="#">Earth</a></li>
-          <li><a class="dropdown-item" href="#">Mars</a></li>
-          <li><a class="dropdown-item" href="#">Jupiter</a></li>
-          <li><a class="dropdown-item" href="#">Saturn</a></li>
-          <li><a class="dropdown-item" href="#">Uranus</a></li>
-          <li><a class="dropdown-item" href="#">Neptune</a></li>
-        </ul>
-      </li> 
+    </header>  
+    <nav class="navbar navbar-expand-lg navbar-collapse-sm">
+    <ul class="nav nav-tabs container pt-10">
       <li class="nav-item dropdown" id="menu">
-        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Star and Asteroid</a>
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Star Gazing</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="where.html">Best place for Gazing</a></li>
+          <li><a class="dropdown-item" href="what.html">What we can see</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown" id="menu">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Planet</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="sun.html">Sun</a></li>
-            <li><a class="dropdown-item" href="#">Moon</a></li>
-            <li><a class="dropdown-item" href="#">Haley</a></li>
-            <li><a class="dropdown-item" href="#">Haley-Bopp</a></li>
-            <li><a class="dropdown-item" href="#">Jupiter</a></li>
-            <li><a class="dropdown-item" href="#">Saturn</a></li>
-            <li><a class="dropdown-item" href="#">Uranus</a></li>
-            <li><a class="dropdown-item" href="#">Neptune</a></li>
+            <li><a class="dropdown-item" href="mecury.html">Mecury</a></li>
+            <li><a class="dropdown-item" href="venus.html">Venus</a></li>
+            <li><a class="dropdown-item" href="earth.html">Earth</a></li>
+            <li><a class="dropdown-item" href="mars.html">Mars</a></li>
+            <li><a class="dropdown-item" href="jupiter.html">Jupiter</a></li>
+            <li><a class="dropdown-item" href="saturn.html">Saturn</a></li>
+            <li><a class="dropdown-item" href="uranus.html">Uranus</a></li>
+            <li><a class="dropdown-item" href="neptune.html">Neptune</a></li>
           </ul>
         </li> 
-      <li class="nav-item dropdown" id="menu">
-        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Constellation</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="aries.html">Aries</a></li>
-          <li><a class="dropdown-item" href="#">Taurus</a></li>
-          <li><a class="dropdown-item" href="#">Gemini</a></li>
-          <li><a class="dropdown-item" href="#">Cancer</a></li>
-          <li><a class="dropdown-item" href="#">Leo</a></li>
-          <li><a class="dropdown-item" href="#">Virgo</a></li>
-          <li><a class="dropdown-item" href="#">Libra</a></li>
-          <li><a class="dropdown-item" href="#">Scorpio</a></li>
-          <li><a class="dropdown-item" href="#">Sagittarius</a></li>
-          <li><a class="dropdown-item" href="#">Capricorn</a></li>
-          <li><a class="dropdown-item" href="#">Aquarius</a></li>
-          <li><a class="dropdown-item" href="#">Pisces</a></li>
-        </ul>
-      </li>
-      <li class="nav-item dropdown" id="menu">
-        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">History</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">The Appear of Universe</a></li>
-          <li><a class="dropdown-item" href="#">Knowledge of Human</a></li>
-          <li><a class="dropdown-item" href="#">Now and Future</a></li>
-        </ul>
-      </li>
-      <li class="nav-item" id="menu">
-        <a class="nav-link active" href="#">Contact Us</a>
-      </li>
-  </ul>
-</nav>
-<div style="position: fixed; bottom: 0; width: 100%; background-color: black; color: white;">
-  <marquee>
-    <span id="date"></span> | <span id="time"></span> | <span id="location"></span>
-  </marquee>
-
-</div>
+        <li class="nav-item dropdown" id="menu">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Star and Asteroid</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="sun.html">Sun</a></li>
+              <li><a class="dropdown-item" href="moon.html">Moon</a></li>
+              <li><a class="dropdown-item" href="Halley_comet.html">Halley</a></li>
+              <li><a class="dropdown-item" href="shoemaker_levy9.html">Shoe Maker Levy-9</a></li>
+              <li><a class="dropdown-item" href="hyakutake.html">Hyakutake</a></li>
+            </ul>
+          </li> 
+        <li class="nav-item dropdown" id="menu">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Constellation</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="aries.html">Aries</a></li>
+            <li><a class="dropdown-item" href="taurus.html">Taurus</a></li>
+            <li><a class="dropdown-item" href="gemini.html">Gemini</a></li>
+            <li><a class="dropdown-item" href="cancer.html">Cancer</a></li>
+            <li><a class="dropdown-item" href="leo.html">Leo</a></li>
+            <li><a class="dropdown-item" href="virgo.html">Virgo</a></li>
+            <li><a class="dropdown-item" href="libra.html">Libra</a></li>
+            <li><a class="dropdown-item" href="scorpio.html">Scorpio</a></li>
+            <li><a class="dropdown-item" href="sagi.html">Sagittarius</a></li>
+            <li><a class="dropdown-item" href="capricon.html">Capricorn</a></li>
+            <li><a class="dropdown-item" href="auarius.html">Aquarius</a></li>
+            <li><a class="dropdown-item" href="pisces.html">Pisces</a></li>
+          </ul>
+        </li>
+        <li class="nav-item" id="menu">
+          <a class="nav-link active" href="history.html">History</a>
+        </li>
+        <li class="nav-item" id="menu">
+          <a class="nav-link active" href="con">Contact Us</a>
+        </li>
+    </ul>
+  </nav>
+  <div style="position: fixed; bottom: 0; width: 100%; background-color: black; color: white;">
+    <marquee>
+      <span id="date"></span> | <span id="time"></span> | <span id="location"></span>
+    </marquee>
+  </div>
 <div class="container">
   <h1 style="text-align: center"><strong>ARIES</strong></h1>
  <div class="row">
@@ -106,10 +94,13 @@
     <div class="col-md-8">
       <h3> Information</h3>
         Aries is one of the constellations of the zodiac. It is located in the Northern celestial hemisphere between Pisces to the west and Taurus to the east. The name Aries is Latin for ram. Its old astronomical symbol is Aries symbol (fixed width).svg (♈︎). It is one of the 48 constellations described by the 2nd century astronomer Ptolemy, and remains one of the 88 modern constellations. It is a mid-sized constellation ranking 39th in overall size, with an area of 441 square degrees (1.1% of the celestial sphere).
-        Aries has represented a ram since late Babylonian times. Before that, the stars of Aries formed a farmhand. Different cultures have incorporated the stars of Aries into different constellations including twin inspectors in China and a porpoise in the Marshall Islands. Aries is a relatively dim constellation, possessing only four bright stars: Hamal (Alpha Arietis, second magnitude), Sheratan (Beta Arietis, third magnitude), Mesarthim (Gamma Arietis, fourth magnitude), and 41 Arietis (also fourth magnitude). The few deep-sky objects within the constellation are quite faint and include several pairs of interacting galaxies. Several meteor showers appear to radiate from Aries, including the Daytime Arietids and the Epsilon Arietids.  
+        Aries has represented a ram since late Babylonian times. Before that, the stars of Aries formed a farmhand. Different cultures have incorporated the stars of Aries into different constellations including twin inspectors in China and a porpoise in the Marshall Islands. Aries is a relatively dim constellation, possessing only four bright stars: Hamal (Alpha Arietis, second magnitude), Sheratan (Beta Arietis, third magnitude), Mesarthim (Gamma Arietis, fourth magnitude), and 41 Arietis (also fourth magnitude). The few deep-sky objects within the constellation are quite faint and include several pairs of interacting galaxies. Several meteor showers appear to radiate from Aries, including the Daytime Arietids and the Epsilon Arietids. 
+      <h3> Where and when to find the Aries</h3>
+        Aries is visible from March to February. The best time to view it is during the month of December when it crosses the meridian.Between March 20 and April 21 Aries completely hides behind the Sun. In astrology, during this period it is said that the Sun is in the house of Aries.
+        The constellation is visible between the latitudes of +90° to -60°. That means you can see it from Argentina, and all the way to the North Pole.
+        The only place on Earth where Aries is not visible at any point of the year in Antarctica.   <br> 
     </div>
   </div><br>
-
   <div class="container">
     <div class="row">
         <div class="col-md-7 justify-content-center" >
@@ -126,14 +117,6 @@
         </div>
     </div>
   </div>
-  <h3> Where and when to find the Aries</h3>
 
-        Aries is visible from March to February. The best time to view it is during the month of December when it crosses the meridian.Between March 20 and April 21 Aries completely hides behind the Sun. In astrology, during this period it is said that the Sun is in the house of Aries.
-        The constellation is visible between the latitudes of +90° to -60°. That means you can see it from Argentina, and all the way to the North Pole.
-        The only place on Earth where Aries is not visible at any point of the year in Antarctica.   <br>
-  <div id="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3160.9008481744695!2d-110.0024217!3d37.6044925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8737a08d0fccf829%3A0x6e57de12b97ced17!2sNatural%20Bridges%20National%20Monument!5e0!3m2!1svi!2s!4v1679593966084!5m2!1svi!2s" width="100%" height="450" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </script>
-  </div>
 </body>
 </html>

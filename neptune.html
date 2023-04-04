@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <script src="index.js"></script>
+  <script async src="https://api.countapi.xyz/hit/astronomy.com/visits?callback=cb"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="amazing.css">
+</head>
+  <body>
+    <header class="navbar navbar-expand-lg navbar-collapse-sm">
+      <div class="container-fluid">
+        <a href="home.html"><img src="img/logo.png"></a>
+        <div class="col-10" style="color: white; font-weight: bolder; font-size: large;">
+          Number of visitors: <span id="visits"></span>
+        </div>
+      </div>
+    </header>  
+    <nav class="navbar navbar-expand-lg navbar-collapse-sm">
+    <ul class="nav nav-tabs container pt-10">
+      <li class="nav-item dropdown" id="menu">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Star Gazing</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="where.html">Best place for Gazing</a></li>
+          <li><a class="dropdown-item" href="what.html">What we can see</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown" id="menu">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Planet</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="mecury.html">Mecury</a></li>
+            <li><a class="dropdown-item" href="venus.html">Venus</a></li>
+            <li><a class="dropdown-item" href="earth.html">Earth</a></li>
+            <li><a class="dropdown-item" href="mars.html">Mars</a></li>
+            <li><a class="dropdown-item" href="jupiter.html">Jupiter</a></li>
+            <li><a class="dropdown-item" href="saturn.html">Saturn</a></li>
+            <li><a class="dropdown-item" href="uranus.html">Uranus</a></li>
+            <li><a class="dropdown-item" href="neptune.html">Neptune</a></li>
+          </ul>
+        </li> 
+        <li class="nav-item dropdown" id="menu">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Star and Asteroid</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="sun.html">Sun</a></li>
+              <li><a class="dropdown-item" href="moon.html">Moon</a></li>
+              <li><a class="dropdown-item" href="Halley_comet.html">Halley</a></li>
+              <li><a class="dropdown-item" href="shoemaker_levy9.html">Shoe Maker Levy-9</a></li>
+              <li><a class="dropdown-item" href="hyakutake.html">Hyakutake</a></li>
+            </ul>
+          </li> 
+        <li class="nav-item dropdown" id="menu">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Constellation</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="aries.html">Aries</a></li>
+            <li><a class="dropdown-item" href="taurus.html">Taurus</a></li>
+            <li><a class="dropdown-item" href="gemini.html">Gemini</a></li>
+            <li><a class="dropdown-item" href="cancer.html">Cancer</a></li>
+            <li><a class="dropdown-item" href="leo.html">Leo</a></li>
+            <li><a class="dropdown-item" href="virgo.html">Virgo</a></li>
+            <li><a class="dropdown-item" href="libra.html">Libra</a></li>
+            <li><a class="dropdown-item" href="scorpio.html">Scorpio</a></li>
+            <li><a class="dropdown-item" href="sagi.html">Sagittarius</a></li>
+            <li><a class="dropdown-item" href="capricon.html">Capricorn</a></li>
+            <li><a class="dropdown-item" href="auarius.html">Aquarius</a></li>
+            <li><a class="dropdown-item" href="pisces.html">Pisces</a></li>
+          </ul>
+        </li>
+        <li class="nav-item" id="menu">
+          <a class="nav-link active" href="history.html">History</a>
+        </li>
+        <li class="nav-item" id="menu">
+          <a class="nav-link active" href="con">Contact Us</a>
+        </li>
+    </ul>
+  </nav>
+  <div style="position: fixed; bottom: 0; width: 100%; background-color: black; color: white;">
+    <marquee>
+      <span id="date"></span> | <span id="time"></span> | <span id="location"></span>
+    </marquee>
+  </div>
+  <h1 style="text-align: center"><strong>ARIES</strong></h1>
+    <div class="main" id="overview"></div>
+    <div class="row">
+      <div class="col-sm-2" style="background-color: white;" >
+        <h2>Quick facts:</h2>
+        <h4>Day</h4>
+        <h6>16 hours</h6>
+        <h4>Year</h4>
+        <h6>165 Earth years</h6>
+        <h4>Radius</h4>
+        <h6>15,299.4 miles | 24,622 kilometers</h6>
+        <h4>Planet Type</h4>
+        <h6>Ice Giant</h6>
+        <h4>Moons</h4>
+        <h6>14</h6>
+      </div>
+    <div class="col-sm-8" style="background-color: white;"> 
+        <br></br>
+        <b style="color:black">Dark, cold, and whipped by supersonic winds, ice giant Neptune is the eighth and most distant planet in our solar system.</b>
+        <br></br>
+        <b style="color:black">More than 30 times as far from the Sun as Earth, Neptune is the only planet in our solar system not visible to the naked eye and the first predicted by mathematics before its discovery. In 2011 Neptune completed its first 165-year orbit since its discovery in 1846.</b>
+        <br></br>
+        <b style="color:black">NASA's Voyager 2 is the only spacecraft to have visited Neptune up close. It flew past in 1989 on its way out of the solar system.</b>
+     <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+        </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/neptune1.jpg" alt="picmer1" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="img/neptune2.jpg" alt="picmer2" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="img/neptune3.jpg" alt="picmer3" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="img/neptune4.jpg" alt="picmer4" class="d-block w-100">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    <div>Dark, cold, and whipped by supersonic winds, ice giant Neptune is the eighth and most distant planet in our solar system. More than 30 times as far from the Sun as Earth, Neptune is the only planet in our solar system not visible to the naked eye. In 2011 Neptune completed its first 165-year orbit since its discovery in 1846.</div>
+    <br></br>
+    <div>Neptune is so far from the Sun that high noon on the big blue planet would seem like dim twilight to us. The warm light we see here on our home planet is roughly 900 times as bright as sunlight on Neptune.</div>
+    <br></br>
+  
+  <div class="main" id="namesake"></div>
+  <h1>Namesake</h1> 
+  <div>The ice giant Neptune was the first planet located through mathematical calculations. Using predictions made by Urbain Le Verrier, Johann Galle discovered the planet in 1846. The planet is named after the Roman god of the sea, as suggested by Le Verrier.</div>
+  <br></br>
+  <div class="main" id="potenialforlife"></div>
+  <h1>Potential for Life</h1>
+  <div>Neptune's environment is not conducive to life as we know it. The temperatures, pressures, and materials that characterize this planet are most likely too extreme and volatile for organisms to adapt to.</div>
+  <br></br>
+  <div class="main" id="sizeanddistance"></div>
+  <h1>Size and Distance</h1>
+  <div>With a radius of 15,299.4 miles (24,622 kilometers), Neptune is about four times wider than Earth. If Earth were the size of a nickel, Neptune would be about as big as a baseball.</div>
+  <br></br>
+  <div>From an average distance of 2.8 billion miles (4.5 billion kilometers), Neptune is 30 astronomical units away from the Sun. One astronomical unit (abbreviated as AU), is the distance from the Sun to Earth. From this distance, it takes sunlight 4 hours to travel from the Sun to Neptune.</div>
+  <br></br>
+  <div class="main" id="orbitandrotation"></div>
+  <h1>Orbit and Rotation</h1>
+  <div>One day on Neptune takes about 16 hours (the time it takes for Neptune to rotate or spin once). And Neptune makes a complete orbit around the Sun (a year in Neptunian time) in about 165 Earth years (60,190 Earth days).</div>
+  <br></br>
+  <div>Sometimes Neptune is even farther from the Sun than dwarf planet Pluto. Pluto's highly eccentric, oval-shaped orbit brings it inside Neptune's orbit for a 20-year period every 248 Earth years. This switch, in which Pluto is closer to the Sun than Neptune, happened most recently from 1979 to 1999. Pluto can never crash into Neptune, though, because for every three laps Neptune takes around the Sun, Pluto makes two. This repeating pattern prevents close approaches of the two bodies.</div>
+  <br></br>
+  <div>Neptune’s axis of rotation is tilted 28 degrees with respect to the plane of its orbit around the Sun, which is similar to the axial tilts of Mars and Earth. This means that Neptune experiences seasons just like we do on Earth; however, since its year is so long, each of the four seasons lasts for over 40 years.</div>
+  <br></br>
+  <div class="main" id="moons"></div>
+  <h1>Moons</h1>
+  <div>Neptune has 14 known moons. Neptune's largest moon Triton was discovered on October 10, 1846, by William Lassell, just 17 days after Johann Gottfried Galle discovered the planet. Since Neptune was named for the Roman god of the sea, its moons are named for various lesser sea gods and nymphs in Greek mythology.</div>
+  <br></br>
+  <div>Triton is the only large moon in the solar system that circles its planet in a direction opposite to the planet's rotation (a retrograde orbit), which suggests that it may once have been an independent object that Neptune captured. Triton is extremely cold, with surface temperatures around minus 391 degrees Fahrenheit (minus 235 degrees Celsius). And yet, despite this deep freeze at Triton, Voyager 2 discovered geysers spewing icy material upward more than 5 miles (8 kilometers). Triton's thin atmosphere, also discovered by Voyager, has been detected from Earth several times since, and is growing warmer, but scientists do not yet know why.</div>
+  <br></br>
+  <div class="main" id="rings"></div>
+  <h1>Rings</h1>
+  <div>Neptune has at least five main rings and four prominent ring arcs that we know of so far. Starting near the planet and moving outward, the main rings are named Galle, Leverrier, Lassell, Arago, and Adams. The rings are thought to be relatively young and short-lived.</div>
+  <br></br>
+  <div>Neptune's ring system also has peculiar clumps of dust called arcs. Four prominent arcs named Liberté (Liberty), Egalité (Equality), Fraternité (Fraternity), and Courage are in the outermost ring, Adams. The arcs are strange because the laws of motion would predict that they would spread out evenly rather than stay clumped together. Scientists now think the gravitational effects of Galatea, a moon just inward from the ring, stabilizes these arcs.</div>
+  <br></br>
+  <div class="main" id="formation"></div>
+  <h1>Formation</h1>
+  <div>Neptune took shape when the rest of the solar system formed about 4.5 billion years ago when gravity pulled swirling gas and dust in to become this ice giant. Like its neighbor Uranus, Neptune likely formed closer to the Sun and moved to the outer solar system about 4 billion years ago.</div>
+  <br></br>
+  <div class="main" id="structure"></div>
+  <h1>Structure</h1>
+  <div>Neptune is one of two ice giants in the outer solar system (the other is Uranus). Most (80% or more) of the planet's mass is made up of a hot dense fluid of "icy" materials – water, methane, and ammonia – above a small, rocky core. Of the giant planets, Neptune is the densest.</div>
+  <br></br>
+  <div>Scientists think there might be an ocean of super hot water under Neptune's cold clouds. It does not boil away because incredibly high pressure keeps it locked inside.</div>
+  <br></br>
+  <div class="main" id="surface"></div>
+  <h1>Surface</h1>
+  <div>Neptune does not have a solid surface. Its atmosphere (made up mostly of hydrogen, helium, and methane) extends to great depths, gradually merging into water and other melted ices over a heavier, solid core with about the same mass as Earth.</div>
+  <br></br>
+  <div class="main" id="atmosphere"></div>
+  <h1>Atmosphere</h1>
+  <div>Neptune's atmosphere is made up mostly of hydrogen and helium with just a little bit of methane. Neptune's neighbor Uranus is a blue-green color due to such atmospheric methane, but Neptune is a more vivid, brighter blue, so there must be an unknown component that causes the more intense color.</div>
+  <br></br>
+  <div>Neptune is our solar system's windiest world. Despite its great distance and low energy input from the Sun, Neptune's winds can be three times stronger than Jupiter's and nine times stronger than Earth's. These winds whip clouds of frozen methane across the planet at speeds of more than 1,200 miles per hour (2,000 kilometers per hour). Even Earth's most powerful winds hit only about 250 miles per hour (400 kilometers per hour).</div>
+  <br></br>
+  <div>In 1989 a large, oval-shaped storm in Neptune's southern hemisphere dubbed the "Great Dark Spot" was large enough to contain the entire Earth. That storm has since disappeared, but new ones have appeared on different parts of the planet.</div>
+  <br></br>
+  <div class="main" id="magnetosphere"></div>
+  <h1>Magnetosphere</h1>
+  <div>The main axis of Neptune's magnetic field is tipped over by about 47 degrees compared with the planet's rotation axis. Like Uranus, whose magnetic axis is tilted about 60 degrees from the axis of rotation, Neptune's magnetosphere undergoes wild variations during each rotation because of this misalignment. The magnetic field of Neptune is about 27 times more powerful than that of Earth.​</div>
+</div> 
+  <div class="col-sm-2" style="background-color: white;">
+    <div id="outer">
+  <h4>On this page</h4>
+  <a href="#overview">Overview</a>
+  <br></br>
+  <a href="#namesake">Namesake</a>
+  <br></br>
+  <a href="#potenialforlife">Potenial for life</a>
+  <br></br>
+  <a href="#sizeanddistance">Size and distance</a>
+  <br></br>
+  <a href="#orbitandrotation">Orbit and rotation</a>
+  <br></br>
+  <a href="#moons">Moons</a>
+  <br></br>
+  <a href="#rings">Rings</a>
+  <br></br>
+  <a href="#formation">Formation</a>
+  <br></br>
+  <a href="#structure">Structure</a>
+  <br></br>
+  <a href="#surface">Surface</a>
+  <br></br>
+  <a href="#atmosphere">Atmosphere</a>
+  <br></br>
+  <a href="#magnetosphere">Magnetosphere</a>
+</div>
+</div>
+</body>
+  <footer>
+    <div class="footer">Copyright © ABC Team - April, 2020</div>
+  </footer>
+  </html>

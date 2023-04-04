@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <script src="index.js"></script>
+  <script async src="https://api.countapi.xyz/hit/astronomy.com/visits?callback=cb"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="amazing.css">
+</head>
+  <body>
+    <header class="navbar navbar-expand-lg navbar-collapse-sm">
+      <div class="container-fluid">
+        <a href="home.html"><img src="img/logo.png"></a>
+        <div class="col-10" style="color: white; font-weight: bolder; font-size: large;">
+          Number of visitors: <span id="visits"></span>
+        </div>
+      </div>
+    </header>  
+    <nav class="navbar navbar-expand-lg navbar-collapse-sm">
+    <ul class="nav nav-tabs container pt-10">
+      <li class="nav-item dropdown" id="menu">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Star Gazing</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="where.html">Best place for Gazing</a></li>
+          <li><a class="dropdown-item" href="what.html">What we can see</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown" id="menu">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Planet</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="mecury.html">Mecury</a></li>
+            <li><a class="dropdown-item" href="venus.html">Venus</a></li>
+            <li><a class="dropdown-item" href="earth.html">Earth</a></li>
+            <li><a class="dropdown-item" href="mars.html">Mars</a></li>
+            <li><a class="dropdown-item" href="jupiter.html">Jupiter</a></li>
+            <li><a class="dropdown-item" href="saturn.html">Saturn</a></li>
+            <li><a class="dropdown-item" href="uranus.html">Uranus</a></li>
+            <li><a class="dropdown-item" href="neptune.html">Neptune</a></li>
+          </ul>
+        </li> 
+        <li class="nav-item dropdown" id="menu">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Star and Asteroid</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="sun.html">Sun</a></li>
+              <li><a class="dropdown-item" href="moon.html">Moon</a></li>
+              <li><a class="dropdown-item" href="Halley_comet.html">Halley</a></li>
+              <li><a class="dropdown-item" href="shoemaker_levy9.html">Shoe Maker Levy-9</a></li>
+              <li><a class="dropdown-item" href="hyakutake.html">Hyakutake</a></li>
+            </ul>
+          </li> 
+        <li class="nav-item dropdown" id="menu">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Constellation</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="aries.html">Aries</a></li>
+            <li><a class="dropdown-item" href="taurus.html">Taurus</a></li>
+            <li><a class="dropdown-item" href="gemini.html">Gemini</a></li>
+            <li><a class="dropdown-item" href="cancer.html">Cancer</a></li>
+            <li><a class="dropdown-item" href="leo.html">Leo</a></li>
+            <li><a class="dropdown-item" href="virgo.html">Virgo</a></li>
+            <li><a class="dropdown-item" href="libra.html">Libra</a></li>
+            <li><a class="dropdown-item" href="scorpio.html">Scorpio</a></li>
+            <li><a class="dropdown-item" href="sagi.html">Sagittarius</a></li>
+            <li><a class="dropdown-item" href="capricon.html">Capricorn</a></li>
+            <li><a class="dropdown-item" href="auarius.html">Aquarius</a></li>
+            <li><a class="dropdown-item" href="pisces.html">Pisces</a></li>
+          </ul>
+        </li>
+        <li class="nav-item" id="menu">
+          <a class="nav-link active" href="history.html">History</a>
+        </li>
+        <li class="nav-item" id="menu">
+          <a class="nav-link active" href="con">Contact Us</a>
+        </li>
+    </ul>
+  </nav>
+  <div style="position: fixed; bottom: 0; width: 100%; background-color: black; color: white;">
+    <marquee>
+      <span id="date"></span> | <span id="time"></span> | <span id="location"></span>
+    </marquee>
+  </div>
+    <h1 style="text-align: center"><strong>HISTORY</strong></h1>
+    <div class="main" id="overview"></div>
+<div class="row">
+      <div class="col-sm-1" style="background-color: white;" >
+      </div>
+  <div class="col-sm-8"> 
+  <br></br>
+  <div class="main" id="universe"></div>
+    <h3>Origin of the Universe</h3> 
+      <div>The universe appears to have an infinite number of galaxies and solar systems and our solar system occupies a small section of this vast entirety. The origins of the universe and solar system set the context for conceptualizing the Earth’s origin and early history.</div>
+      <br></br>
+      <img src="img/history_origin.jpg" alt="" width="100%" height="500px">
+      <br></br>
+  <div class="main" id="bigbang"></div>
+   <h3>Big-Bang Theory</h3>
+      <div>The mysterious details of events prior to and during the origin of the universe are subject to great scientific debate. The prevailing idea about how the universe was created is called the big-bang theory. Although the ideas behind the big-bang theory feel almost mystical, they are supported by Einstein’s theory of general relativity. Other scientific evidence, grounded in empirical observations, supports the big-bang theory.</div>
+      <br></br>
+      <div>The big-bang theory proposes the universe was formed from an infinitely dense and hot core of material. The bang in the title suggests there was an explosive, outward expansion of all matter and space that created atoms. Spectroscopy confirms that hydrogen makes up about 74% of all matter in the universe. Since its creation, the universe has been expanding for 13.8 billion years and recent observations suggest the rate of this expansion is increasing. </div>
+      <br></br>
+      <img src="img/history_bigbang.jpg" alt="" width="100%">
+      <br></br>
+  <div class="main" id="stellar"></div>
+    <h3>Stellar Evolution</h3>
+      <div class="row">
+        <div class="col-sm-4">
+          <div><img src="img/history_Nucleosynthesis.png" alt="" width="100%"></div>
+        </div>
+        <div class="col-sm-8">
+          <div>Astronomers think the big bang created lighter elements, mostly hydrogen and smaller amounts of elements helium, lithium, and beryllium. Another process must be responsible for creating the other 90 heavier elements. The current model of stellar evolution explains the origins of these heavier elements.</div>
+        </div>
+      </div>   
+      <br></br>
+      <h4>&nbsp;&nbsp;&nbsp;&nbsp;BIRTH OF A STAR</h4>
+      <div class="row">
+        <div class="col-sm-8">
+          <div>Stars start their lives as elements floating in cold, spinning clouds of gas and dust known as nebulas. Gravitational attraction or perhaps a nearby stellar explosion causes the elements to condense and spin into disk shape. In the center of this disk shape a new star is born under the force of gravity. The spinning whirlpool concentrates material in the center, and the increasing gravitational forces collect even more mass. Eventually, the immensely concentrated mass of material reaches a critical point of such intense heat and pressure it initiates fusion.</div>
+        </div>
+        <div class="col-sm-4">
+          <div><img src="img/history_nebula_pillars.jpg" alt="" width="100%"></div>
+        </div>
+      </div>   
+      <br></br>
+      <h4>&nbsp;&nbsp;&nbsp;&nbsp;FUSION</h4>
+      <div class="row">
+        <div class="col-sm-4">
+          <div><img src="img/history_fusion.png" alt="" width="100%"></div>
+        </div>
+        <div class="col-sm-8">
+          <div>Fusion is not a chemical reaction. Fusion is a nuclear reaction in which two or more nuclei, the centers of atoms, are forced together and combine creating a new larger atom. This reaction gives off a tremendous amount of energy, usually as light and solar radiation. An element such as hydrogen combines or fuses with other hydrogen atoms in the core of a star to become a new element, in this case, helium. Another product of this process is energy, such as solar radiation that leaves the Sun and comes to the Earth as light and heat. Fusion is a steady and predictable process, which is why we call this the main phase of a star’s life. During its main phase, a star turns hydrogen into helium. Since most stars contain plentiful amounts of hydrogen, the main phase may last billions of years, during which their size and energy output remains relatively steady.</div>
+        </div>  
+      <br></br>
+       <div class="col-sm-8">
+          <div>The giant phase in a star’s life occurs when the star runs out of hydrogen for fusion. If a star is large enough, it has sufficient heat and pressure to start fusing helium into heavier elements. This style of fusion is more energetic and the higher energy and temperature expand the star to a larger size and brightness. This giant phase is predicted to happen to our Sun in another few billion years, growing the radius of the Sun to Earth’s orbit, which will render life impossible. The mass of a star during its main phase is the primary factor in determining how it will evolve. If the star has enough mass and reaches a point at which the primary fusion element, such as helium, is exhausted, fusion continues using new, heavier elements. This occurs over and over in very large stars, forming progressively heavier elements like carbon and oxygen. Eventually, fusion reaches its limit as it forms iron and nickel. This progression explains the abundance of iron and nickel in rocky objects, like Earth, within the solar system. At this point, any further fusion absorbs energy instead of giving it off, which is the beginning of the end of the star’s life.</div>
+        </div>
+        <div class="col-sm-4">
+          <b><img src="img/history_Star_life_cycles_red_dwarf.png" alt="" width="100%"></b>
+       </div>
+      </div> 
+      <br></br>
+      <h4>&nbsp;&nbsp;&nbsp;&nbsp;DEATH OF A STAR</h4>
+      <div class="row">
+        <div class="col-sm-4">
+          <b><img src="img/history_Crab_Nebula.jpg" alt="" width="100%"></b>
+        </div>
+        <div class="col-sm-8">
+          <div>The death of a star can range from spectacular to other-worldly (see figure). Stars like the Sun form a planetary nebula, which comes from the collapse of the star’s outer layers in an event like the implosion of a building. In the tug-of-war between gravity’s inward pull and fusion’s outward push, gravity instantly takes over when fusion ends, with the outer gasses puffing away to form a nebula. More massive stars do this as well but with a more energetic collapse, which starts another type of energy release mixed with element creation known as a supernova. In a supernova, the collapse of the core suddenly halts, creating a massive outward-propagating shock wave. A supernova is the most energetic explosion in the universe short of the big bang. The energy release is so significant the ensuing fusion can make every element up through uranium.</div>
+        </div>
+        <div class="col-sm-8">
+          <div>The death of the star can result in the creation of white dwarfs, neutron stars, or black holes. Following their deaths, stars like the Sun turn into white dwarfs.</div>
+          <br></br>
+          <div>White dwarfs are hot star embers, formed by packing most of a dying star’s mass into a small and dense object about the size of Earth. Larger stars may explode in a supernova that packs their mass even tighter to become neutron stars. Neutron stars are so dense that protons combine with electrons to form neutrons. The largest stars collapse their mass even further, becoming objects so dense that light cannot escape their gravitational grasp. These are the infamous black holes and the details of the physics of what occurs in them are still up for debate.</div>
+        </div>
+        <div class="col-sm-4">
+          <b><img src="img/history_blackhole.png" alt="" width="100%"></b>
+       </div>
+      </div>   
+      <br></br>
+  <div class="main" id="originSolar"></div>
+    <h3>Origin of the Solar System: The Nebular Hypothesis</h3>
+    <div class="row">
+      <div class="col-sm-4">
+        <b><img src="img/history_solar.jpg" alt="" width="100%"></b>
+      </div>
+      <div class="col-sm-8">
+        <div>Our solar system formed at the same time as our Sun as described in the nebular hypothesis. The nebular hypothesis is the idea that a spinning cloud of dust made of mostly light elements, called a nebula, flattened into a protoplanetary disk, and became a solar system consisting of a star with orbiting planets. The spinning nebula collected the vast majority of material in its center, which is why the sun Accounts for over 99% of the mass in our solar system. </div>
+      </div>
+    </div>
+     <br></br>
+  <div class="main" id="planet"></div>
+    <h3>Planet Arrangement and Segregation</h3>
+    <div class="row">
+      <div class="col-sm-8">
+        <div>As our solar system formed, the nebular cloud of dispersed particles developed distinct temperature zones. Temperatures were very high close to the center, only allowing condensation of metals and silicate minerals with high melting points. Farther from the Sun, the temperatures were lower, allowing the condensation of lighter gaseous molecules such as methane, ammonia, carbon dioxide, and water. This temperature differentiation resulted in the inner four planets of the solar system becoming rocky, and the outer four planets becoming gas giants.</div>
+      </div>
+      <br>
+      <div class="col-sm-4">
+        <b><img src="img/history_Fomalhaut_Circumstellar_Disk.jpg" alt="" width="100%"></b>
+     </div>
+     <div class="col-sm-4">
+      <b><img src="img/history_protoplanetary_disk.jpg" alt="" width="100%"></b>
+    </div>
+    <br>
+    <div class="col-sm-8">
+      <div>Both rocky and gaseous planets have a similar growth model. Particles of dust, floating in the disc were attracted to each other by static charges and eventually, gravity. As the clumps of dust became bigger, they interacted with each other—colliding, sticking, and forming proto-planets. The planets continued to grow over the course of many thousands or millions of years, as material from the protoplanetary disc was added. Both rocky and gaseous planets started with a solid core. Rocky planets built more rock on that core, while gas planets added gas and ice. Ice giants formed later and on the furthest edges of the disc, accumulating less gas and more ice. That is why the gas-giant planets Jupiter and Saturn are composed of mostly hydrogen and helium gas, more than 90%. The ice giants Uranus and Neptune are composed of mostly methane ices and only about 20% hydrogen and helium gases.</div>
+    </div>
+      <div class="col-sm-8">
+        <div>The planetary composition of the gas giants is clearly different from the rocky planets. Their size is also dramatically different for two reasons: First, the original planetary nebula contained more gases and ices than metals and rocks. There was abundant hydrogen, carbon, oxygen, nitrogen, and less silicon and iron, giving the outer planets more building material. Second, the stronger gravitational pull of these giant planets allowed them to collect large quantities of hydrogen and helium, which could not be collected by weaker gravity of the smaller planets.</div>
+      </div>
+      <div class="col-sm-4">
+        <b><img src="img/history_Artist_impression_of_the_water_snowline_around_the_young_star.jpg" alt="" width="100%"></b>
+     </div> 
+     <br>
+      <div class="col-sm-4">
+        <b><img src="img/history_TolucaMeteorite.jpg" alt="" width="100%"></b>
+      </div> 
+      <div class="col-sm-8">
+        <div>Jupiter’s massive gravity further shaped the solar system and growth of the inner rocky planets. As the nebula started to coalesce into planets, Jupiter’s gravity accelerated the movement of nearby materials, generating destructive collisions rather than constructively gluing material together. These collisions created the asteroid belt, an unfinished planet, located between Mars and Jupiter. This asteroid belt is the source of most meteorites that currently impact the Earth. Study of asteroids and meteorites help geologist to determine the age of Earth and the composition of its core, mantle, and crust. Jupiter’s gravity may also explain Mars’ smaller mass, with the larger planet consuming material as it migrated from the inner to outer edge of the solar system.</div>
+      </div>
+      <br>
+    </div>
+    <br></br>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;PLUTO AND PLANET DEFINITION</h4>
+    <div class="row">
+      <div class="col-sm-8">
+        <div>The outermost part of the solar system is known as the Kuiper belt, which is a scattering of rocky and icy bodies. Beyond that is the Oort cloud, a zone filled with small and dispersed ice traces. These two locations are where most comets form and continue to orbit, and objects found here have relatively irregular orbits compared to the rest of the solar system. Pluto, formerly the ninth planet, is located in this region of space. The XXVIth General Assembly of the International Astronomical Union (IAU) stripped Pluto of planetary status in 2006 because scientists discovered an object more massive than Pluto, which they named Eris. The IAU decided against including Eris as a planet, and therefore, excluded Pluto as well. The IAU narrowed the definition of a planet to three criteria: 1) enough mass to have gravitational forces that force it to be rounded, 2) not massive enough to create fusion, and 3) large enough to be in a cleared orbit, free of other planetesimals that should have been incorporated at the time the planet formed. Pluto passed the first two parts of the definition, but not the third. Pluto and Eris are currently classified as dwarf planets.</div>
+      </div>
+      <div class="col-sm-4">
+        <b><img src="img/history_EightTNOs.png" alt="" width="100%"></b>
+      </div>
+    </div> 
+    <br></br>
+  <div class="main" id="Hadean"></div>
+    <h3>Hadean Eon</h3>
+      <br>
+      <img src="img/history_Hadean.png" alt="" width="100%">
+      <br></br>
+      <div>Geoscientists use the geological time scale to assign relative age names to events and rocks, separating major events in Earth’s history based on significant changes as recorded in rocks and fossils. This section summarizes the most notable events of each major time interval. For a breakdown on how these time intervals are chosen and organized,</div>
+      <br></br>
+      <div>The Hadean Eon, named after the Greek god and ruler of the underworld Hades, is the oldest eon and dates from 4.5–4.0 billion years ago.</div>
+      <br></br>
+      <div>This time represents Earth’s earliest history, during which the planet was characterized by a partially molten surface, volcanism, and asteroid impacts. Several mechanisms made the newly forming Earth incredibly hot: gravitational compression, radioactive decay, and asteroid impacts. Most of this initial heat still exists inside the Earth. The Hadean was originally defined as the birth of the planet occurring 4.0 billion years ago and preceding the existence of many rocks and life forms. However, geologists have dated minerals at 4.4 billion years, with evidence that liquid water was present. There is possibly even evidence of life existing over 4.0 billion years ago. However, the most reliable record for early life, the microfossil record, starts at 3.5 billion years ago.</div>
+      <br></br>
+  <div class="main" id="originEarth"></div>
+  <h3>Origin of Earth’s Crust</h3>
+    <div class="col-sm-12">
+        <div class="image">
+          <img src="img/history_MohoDepth.png" width="40%" style="float:left" > As Earth cooled from its molten state, minerals started to crystallize and settle resulting in a separation of minerals based on density and the creation of the crust, mantle, and core. The earliest Earth was chiefly molten material and would have been rounded by gravitational forces so it resembled a ball of lava floating in space. As the outer part of the Earth slowly cooled, the high melting-point minerals formed solid slabs of early crust. These slabs were probably unstable and easily reabsorbed into the liquid magma until the Earth cooled enough to allow numerous larger fragments to form a thin primitive crust. Scientists generally assume this crust was oceanic and mafic in composition, and littered with impacts, much like the Moon’s current crust. There is still some debate over when plate tectonics started, which would have led to the formation of continental and felsic crust. Regardless of this, as Earth cooled and solidified, less dense felsic minerals floated to the surface of the Earth to form the crust, while the denser mafic and ultramafic materials sank to form the mantle and the highest-density iron and nickel sank into the core. This differentiated the Earth from a homogenous planet into a heterogeneous one with layers of felsic crust, mafic crust, ultramafic mantle, and iron and nickel core.
+      </div>
+    </div>
+  <br></br>
+  <div class="main" id="originMoon"></div>
+  <h3>Origin of the Moon</h3>
+  <iframe max-width="100%" height="500px" src="https://www.youtube.com/embed/UIKmSQqp8wY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe>
+  <br></br>
+    <div class="row">
+      <div class="col-sm-8">
+        <div>Several unique features of Earth’s Moon have prompted scientists to develop the current hypothesis about its formation. The Earth and Moon are tidally locked, meaning that as the Moon orbits, one side always faces the Earth and the opposite side is not visible to us. Also and most importantly, the chemical compositions of the Earth and Moon show nearly identical isotope ratios and volatile content. Apollo missions returned from the Moon with rocks that allowed scientists to conduct very precise comparisons between Moon and Earth rocks. Other bodies in the solar system and meteorites do not share the same degree of similarity and show much higher variability. If the Moon and Earth formed together, this would explain why they are so chemically similar.</div>
+      </div>
+      <br>
+      <div class="col-sm-4">
+        <b><img src="img/history_Back_side_of_the_Moon.jpg" alt="" width="100%"></b>
+    </div>
+    <div class="col-sm-4">
+      <b><img src="img/history_ArtistsConceptMoonFormation.jpg" alt="" width="100%"></b>
+    </div>
+    <br></br>
+    <div class="col-sm-8">
+      <div>Many ideas have been proposed for the origin of the Moon: The Moon could have been captured from another part of the solar system and formed in place together with the Earth, or the Moon could have been ripped out of the early Earth. None of proposed explanations can account for all the evidence. The currently prevailing hypothesis is the giant-impact hypothesis. It proposes a body about half of Earth’s size must have shared at least parts of Earth’s orbit and collided with it, resulting in a violent mixing and scattering of material from both objects. Both bodies would be composed of a combination of materials, with more of the lower density splatter coalescing into the Moon. This may explain why the Earth has a higher density and thicker core than the Moon.</div>
+    </div> 
+    </div> 
+  <br></br>
+  <div class="main" id="originEarthWater"></div>
+  <h3>Origin of Earth’s Water</h3>
+    <div class="col-sm-12">
+      <div class="image">
+        <img src="img/history_earth_water.jpg" width="30%" style="float:right" > Explanations for the origin of Earth’s water include volcanic outgassing, comets, and meteorites. The volcanic outgassing hypothesis for the origin of Earth’s water is that it originated from inside the planet, and emerged via tectonic processes as vapor associated with volcanic eruptions.  Since all volcanic eruptions contain some water vapor, at times more than 1% of the volume, these alone could have created Earth’s surface water. Another likely source of water was from space. Comets are a mixture of dust and ice, with some or most of that ice being frozen water. Seemingly dry meteors can contain small but measurable amounts of water, usually trapped in their mineral structures. During heavy bombardment periods later in Earth’s history, its cooled surface was pummeled by comets and meteorites, which could be why so much water exists above ground. There isn’t a definitive answer for what process is the source of ocean water. Earth’s water isotopically matches water found in meteorites much better than that of comets. However, it is hard to know if Earth processes could have changed the water’s isotopic signature over the last 4-plus billion years. It is possible that all three sources contributed to the origin of Earth’s water.
+      </div>
+    </div>
+  <br></br>
+  <div class="main" id="archeanEon"></div>
+  <h3>Archean Eon</h3>
+    <div class="col-sm-12">
+      <div class="image">
+        <img src="img/history_Archean.png" width="30%" style="float: left;"> &nbsp;The Archean Eon, which lasted from 4.0–2.5 billion years ago, is named after the Greek word for beginning. This eon represents the beginning of the rock record. Although there is current evidence that rocks and minerals existed during the Hadean Eon, the Archean has a much more robust rock and fossil record.
+      </div>
+    </div>
+  <br></br>
+    <h4>Late Heavy Bombardment</h4>
+    <div class="col-sm-12">
+      <div class="image">
+        <img src="img/history_pluto.jpg" width="30%" style="float: right;"> Objects were chaotically flying around at the start of the solar system, building the planets and moons. There is evidence that after the planets formed, about 4.1–3.8 billion years ago, a second large spike of asteroid and comet impacted the Earth and Moon in an event called late heavy bombardment. Meteorites and comets in stable or semi-stable orbits became unstable and started impacting objects throughout the solar system. In addition, this event is called the lunar cataclysm because most of the Moons craters are from this event. During late heavy bombardment, the Earth, Moon, and all planets in the solar system were pummeled by material from the asteroid and Kuiper belts. Evidence of this bombardment was found within samples collected from the Moon.
+        <br></br>
+        &emsp;&emsp; It is universally accepted that the solar system experienced extensive asteroid and comet bombardment at its start; however, some other process must have caused the second increase in impacts hundreds of millions of years later. A leading theory blames gravitational resonance between Jupiter and Saturn for disturbing orbits within the asteroid and Kuiper belts based on a similar process observed in the Eta Corvi star system.
+      </div>
+    </div>
+  <br></br>
+  <div class="main" id="originContinents"></div>
+  <h3>Origin of the Continents</h3>
+    <div class="col-sm-12">
+      <div class="image">
+        <img src="img/history_Earth-cutaway-schematic.png" width="30%" style="float:right" >In order for plate tectonics to work as it does currently, it necessarily must have continents. However, the easiest way to create continental material is via assimilation and differentiation of existing continents (see Chapter 4). This chicken-and-egg quandary over how continents were made in the first place is not easily answered because of the great age of continental material and how much evidence has been lost during tectonics and erosion. While the timing and specific processes are still debated, volcanic action must have brought the first continental material to the Earth’s surface during the Hadean, 4.4 billion years ago. This model does not solve the problem of continent formation, since magmatic differentiation seems to need thicker crust. Nevertheless, the continents formed by some incremental process during the early history of Earth. The best idea is that density differences allowed lighter felsic materials to float upward and heavier ultramafic materials and metallic iron to sink. These density differences led to the layering of the Earth, the layers that are now detected by seismic studies. Early protocontinents accumulated felsic materials as developing plate-tectonic processes brought lighter material from the mantle to the surface.
+        <br></br>
+        <img src="img/history_ocean.gif" width="30%" style="float:left" > The first solid evidence of modern plate tectonics is found at the end of the Archean, indicating at least some continental lithosphere must have been in place. This evidence does not necessarily mark the starting point of plate tectonics; remnants of earlier tectonic activity could have been erased by the rock cycle.
+        <br></br>
+        The stable interiors of the current continents are called cratons and were mostly formed in the Archean Eon. A craton has two main parts: the shield, which is crystalline basement rock near the surface, and the platform made of sedimentary rocks covering the shield. Most cratons have remained relatively unchanged with most tectonic activity having occurred around cratons instead of within them. Whether they were created by plate tectonics or another process, Archean continents gave rise to the Proterozoic continents that now dominate our planet.      
+        <br></br>
+      </div>
+      <div class="row">
+        <div class="col-sm-8">
+          The general guideline as to what constitutes a continent and differentiates oceanic from continental crust is under some debate. At passive margins, continental crust grades into oceanic crust at passive margins, making a distinction difficult. Even island-arc and hot-spot material can seem more closely related to continental crust than oceanic. Continents usually have a craton in the middle with felsic igneous rocks. There is evidence that submerged masses like Zealandia, that includes present-day New Zealand, would be considered a continent. Continental crust that does not contain a craton is called a continental fragment, such as the island of Madagascar off the east coast of Africa.
+        </div>
+        <br>
+        <div class="col-sm-4">
+          <b><img src="img/history_Zealandia_topography.jpg" alt="" width="100%"></b>
+      </div>
+    </div>  
+    <br></br>  
+  <div class="main" id="firstLife"></div>
+  <h3>First Life on Earth</h3>
+    <div class="col-sm-12">
+      <div class="image">
+        <img src="img/history_MicrobialMats.jpg" width="30%" style="float:right" >Life most likely started during the late Hadean or early Archean Eons. The earliest evidence of life are chemical signatures, microscopic filaments, and microbial mats. Carbon found in 4.1 billion year old zircon grains have a chemical signature suggesting an organic origin. Other evidence of early life are 3.8–4.3 billion-year-old microscopic filaments from a hydrothermal vent deposit in Quebec, Canada. While the chemical and microscopic filaments evidence is not as robust as fossils, there is significant fossil evidence for life at 3.5 billion years ago. These first well-preserved fossils are photosynthetic microbial mats, called stromatolites, found in Australia.
+      </div>
+      <br></br>  
+      <div>Although the origin of life on Earth is unknown, hypotheses include a chemical origin in the early atmosphere and ocean, deep-sea hydrothermal vents, and delivery to Earth by comets or other objects. One hypothesis is that life arose from the chemical environment of the Earth’s early atmosphere and oceans, which was very different than today. The oxygen-free atmosphere produced a reducing environment with abundant methane, carbon dioxide, sulfur, and nitrogen compounds. This is what the atmosphere is like on other bodies in the solar system. In the famous Miller-Urey experiment, researchers simulated early Earth’s atmosphere and lightning within a sealed vessel. After igniting sparks within the vessel, they discovered the formation of amino acids, the fundamental building blocks of proteins.  In 1977, when scientists discovered an isolated ecosystem around hydrothermal vents on a deep-sea mid-ocean ridge (see Chapter 4), it opened the door for another explanation of the origin of life. The hydrothermal vents have a unique ecosystem of critters with chemosynthesis as the foundation of the food chain instead of photosynthesis. The ecosystem is deriving its energy from hot chemical-rich waters pouring out of underground towers. This suggests that life could have started on the deep ocean floor and derived energy from the heat from the Earth’s interior via chemosynthesis. Scientists have since expanded the search for life to more unconventional places, like Jupiter’s icy moon Europa.</div>
+      <br></br>
+      <div>Another possibility is that life or its building blocks came to Earth from space, carried aboard comets or other objects. Amino acids, for example, have been found within comets and meteorites. This intriguing possibility also implies a high likelihood of life existing elsewhere in the cosmos.</div>
+    <br></br>
+  <div class="main" id="Proterozoic"></div>
+  <h3>Proterozoic Eon</h3>
+    <div class="col-sm-12">
+      <div class="image">
+        <img src="img/history_synthesis.gif" width="30%" style="float:left" >The Proterozoic Eon, meaning “earlier life,” comes after the Archean Eon and ranges from 2.5 billion to 541 million years old. During this time, most of the central parts of the continents had formed and plate tectonic processes had started. Photosynthesis by microbial organisms, such as single-celled cyanobacteria, had been slowly adding oxygen to the oceans. As cyanobacteria evolved into multicellular organisms, they completely transformed the oceans and later the atmosphere by adding massive amounts of free oxygen gas (O2) and initiated what is called the Great Oxygenation Event (GOE). This drastic environmental change decimated the anaerobic bacteria, which could not survive in the presence of free oxygen. On the other hand, aerobic organisms could thrive in ways they could not earlier.
+        <br></br>
+        An oxygenated world also changed the chemistry of the planet in significant ways. For example, iron remained in solution in the non-oxygenated environment of the earlier Archean Eon. In chemistry, this is known as a reducing environment. Once the environment was oxygenated, iron combined with free oxygen to form solid precipitates of iron oxide, such as the mineral hematite or magnetite. These precipitates accumulated into large mineral deposits with red chert known as banded-iron formations, which are dated at about 2 billion years.
+        <br></br>    
+        The formation of iron oxide minerals and red chert (see figure) in the oceans lasted a long time and prevented oxygen levels from increasing significantly, since precipitation took the oxygen out of the water and deposited it into the rock strata. As oxygen continued to be produced and mineral precipitation leveled off, dissolved oxygen gas eventually saturated the oceans and started bubbling out into the atmosphere. Oxygenation of the atmosphere is the single biggest event that distinguishes the Archean and Proterozoic environments. In addition to changing mineral and ocean chemistry, the GOE is also tabbed as triggering Earth’s first glaciation event around 2.1 billion years ago, the Huron Glaciation. Free oxygen reacted with methane in the atmosphere to produce carbon dioxide. Carbon dioxide and methane are called greenhouse gases because they trap heat within the Earth’s atmosphere, like the insulated glass of a greenhouse. Methane is a more effective insulator than carbon dioxide, so as the proportion of carbon dioxide in the atmosphere increased, the greenhouse effect decreased, and the planet cooled.
+      </div>
+    </div>
+    <br></br>  
+  <div class="main" id="Rodinia"></div>
+  <h3>Rodinia</h3>
+    <div class="col-sm-12">
+      <div class="image">
+        <img src="img/history_Rodinia.jpg" width="30%" style="float:left" >By the Proterozoic Eon, lithospheric plates had formed and were moving according to plate tectonic forces that were similar to current times. As the moving plates collided, the ocean basins closed to form a supercontinent called Rodinia. The supercontinent formed about 1 billion years ago and broke up about 750 to 600 million years ago, at the end of the Proterozoic. One of the resulting fragments was a continental mass called Laurentia that would later become North America. Geologists have reconstructed Rodinia by matching and aligning ancient mountain chains, assembling the pieces like a jigsaw puzzle, and using paleomagnetics to orient to magnetic north.
+        <br></br>
+        The disagreements over these complex reconstructions is exemplified by geologists proposing at least six different models for the breakup of Rodinia to create Australia, Antarctica, parts of China, the Tarim craton north of the Himalaya, Siberia, or the Kalahari craton of eastern Africa. This breakup created lots of shallow-water, biologically favorable environments that fostered the evolutionary breakthroughs marking the start of the next eon, the Phanerozoic.
+      </div>
+    </div>  
+    <br></br>
+  <div class="main" id="lifeEvolves"></div>
+  <h3>Life Evolves</h3>
+    <div class="col-sm-12">
+      <div class="image">
+        <img src="img/history_Stromatolites_in_Sharkbay.jpg" width="30%" style="float:right" >Early life in the Archean and earlier is poorly documented in the fossil record. Based on chemical evidence and evolutionary theory, scientists propose this life would have been single-celled photosynthetic organisms, such as the cyanobacteria that created stromatolites. Cyanobacteria produced free oxygen in the atmosphere through photosynthesis. Cyanobacteria, archaea, and bacteria are prokaryotes—primitive organisms made of single cells that lack cell nuclei and other organelles.
+         <br></br>
+        <img src="img/history_Stromatolites_hoyt.jpg" width="30%" style="float: left;">A large evolutionary step occurred during the Proterozoic Eon with the appearance of eukaryotes around 2.1 to 1.6 billion years ago. Eukaryotic cells are more complex, having nuclei and organelles. The nuclear DNA is capable of more complex replication and regulation than that of prokaryotic cells. The organelles include mitochondria for producing energy and chloroplasts for photosynthesis. The eukaryote branch in the tree of life gave rise to fungi, plants, and animals.
+        <br></br>
+        Another important event in Earth’s biological history occurred about 1.2 billion years ago when eukaryotes invented sexual reproduction. Sharing genetic material from two reproducing individuals, male and female, greatly increased genetic variability in their offspring. This genetic mixing accelerated evolutionary change, contributing to more complexity among individual organisms and within ecosystems
+        <br></br>
+        Proterozoic land surfaces were barren of plants and animals and geologic processes actively shaped the environment differently because land surfaces were not protected by leafy and woody vegetation. For example, rain and rivers would have caused erosion at much higher rates on land surfaces devoid of plants. This resulted in thick accumulations of pure quartz sandstone from the Proterozoic Eon such as the extensive quartzite formations in the core of the Uinta Mountains in Utah.
+        <img src="img/history_DickinsoniaCostata.jpg" width="30%" style="float: right;"> Fauna during the Ediacaran Period, 635.5 to 541 million years ago are known as the Ediacaran fauna, and offer a first glimpse at the diversity of ecosystems that evolved near the end of the Proterozoic. These soft-bodied organisms were among the first multicellular life forms and probably were similar to jellyfish or worm-like. Ediacaran fauna did not have hard parts like shells and were not well preserved in the rock records. However, studies suggest they were widespread in the Earth’s oceans. Scientists still debate how many species were evolutionary dead-ends that became extinct and how many were ancestors of modern groupings. The transition of soft-bodied Ediacaran life to life forms with hard body parts occurred at the end of the Proterozoic and beginning of the Phanerozoic Eons. This evolutionary explosion of biological diversity made a dramatic difference in scientists’ ability to understand the history of life on Earth.
+      </div>
+    </div>  
+      <br></br>
+    <div class="main" id="PaleozoicEra"></div>
+    <h3>Phanerozoic Eon: Paleozoic Era</h3>
+    <div class="col-sm-12">
+      <div class="image">
+        <img src="img/history_ElrathiakingiUtahWheelerCambrian.jpg" width="30%" style="float:left" >The Phanerozoic Eon is the most recent, 541 million years ago to today, and means “visible life” because the Phanerozoic rock record is marked by an abundance of fossils. Phanerozoic organisms had hard body parts like claws, scales, shells, and bones that were more easily preserved as fossils. Rocks from the older Precambrian time are less commonly found and rarely include fossils because these organisms had soft body parts. Phanerozoic rocks are younger, more common, and contain the majority of extant fossils. The study of rocks from this eon yields much greater detail. The Phanerozoic is subdivided into three eras, from oldest to youngest they are Paleozoic (“ancient life”), Mesozoic (“middle life”), and Cenozoic (“recent life”) and the remaining three chapter headings are on these three important eras.
+        <br></br>
+        <img src="img/history_Trilobite_Heinrich_Harder.jpg" width="30%" style="float: right;">Life in the early Paleozoic Era was dominated by marine organisms but by the middle of the era plants and animals evolved to live and reproduce on land. Fish evolved jaws and fins evolved into jointed limbs. The development of lungs allowed animals to emerge from the sea and become the first air-breathing tetrapods (four-legged animals) such as amphibians. From amphibians evolved reptiles with the amniotic egg. From reptiles evolved an early ancestor to birds and mammals and their scales became feathers and fur. Near the end of the Paleozoic Era, the Carboniferous Period had some of the most extensive forests in Earth’s history. Their fossilized remains became the coal that powered the industrial revolution
+        <br></br>
+      </div>
+    </div>  
+      <br></br>   
+    <div class="main" id="PaleozoicTectonics"></div>
+    <h3>Paleozoic Tectonics and Paleogeography</h3>
+    <div class="col-sm-12">
+      <div class="image">
+        <img src="img/history_North_america_craton_nps.gif" width="30%" style="float:right" >During the Paleozoic Era, sea-levels rose and fell four times. With each sea-level rise, the majority of North America was covered by a shallow tropical ocean. Evidence of these submersions are the abundant marine sedimentary rocks such as limestone with fossils corals and ooids. Extensive sea-level falls are documented by widespread unconformities. Today, the midcontinent has extensive marine sedimentary rocks from the Paleozoic and western North America has thick layers of marine limestone on block faulted mountain ranges such as Mt. Timpanogos near Provo, Utah. 
+        <br></br>
+        The assembly of supercontinent Pangea, sometimes spelled Pangaea, was completed by the late Paleozoic Era. The name Pangea was originally coined by Alfred Wegener and means “all land.” Pangea is the when all of the major continents were grouped together as one by a series of tectonic events including subduction island-arc accretion, and continental collisions, and ocean-basin closures. In North America, these tectonic events occurred on the east coast and are known as the Taconic, Acadian, Caledonian, and Alleghanian orogenies. The Appalachian Mountains are the erosional remnants of these mountain building events in North America. Surrounding Pangea was a global ocean basin known as the Panthalassa. Continued plate movement extended the ocean into Pangea, forming a large bay called the Tethys Sea that eventually divided the land mass into two smaller supercontinents, Laurasia and Gondwana. Laurasia consisted of Laurentia and Eurasia, and Gondwana consisted of the remaining continents of South America, Africa, India, Australia, and Antarctica.
+        <br></br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ovT90wYrVk4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <br></br>
+        While the east coast of North America was tectonically active during the Paleozoic Era, the west coast remained mostly inactive as a passive margin during the early Paleozoic. The western edge of North American continent was near the present-day Nevada-Utah border and was an expansive shallow continental shelf near the paleoequator. However, by the Devonian Period, the Antler orogeny started on the west coast and lasted until the Pennsylvanian Period. The Antler orogeny was a volcanic island arc that was accreted onto western North America with the subduction direction away from North America. This created a mountain range on the west coast of North American called the Antler highlands and was the first part of building the land in the west that would eventually make most of California, Oregon, and Washington states. By the late Paleozoic, the Sonoma orogeny began on the west coast and was another collision of an island arc. The Sonoma orogeny marks the change in subduction direction to be toward North America with a volcanic arc along the entire west coast of North America by late Paleozoic to early Mesozoic Eras.
+        <br></br>
+        By the end of the Paleozoic Era, the east coast of North America had a very high mountain range due to continental collision and the creation of Pangea. The west coast of North America had smaller and isolated volcanic highlands associated with island arc accretion. During the Mesozoic Era, the size of the mountains on either side of North America would flip, with the west coast being a more tectonically active plate boundary and the east coast changing into a passive margin after the breakup of Pangea.
+      </div>
+    </div>  
+      <br></br>
+    <div class="main" id="PaleozoicEvolution"></div>
+    <h3>Paleozoic Evolution</h3>
+    <div class="col-sm-12">
+      <div class="image">
+        <img src="img/history_Anomalocaris.jpg" width="30%" style="float:right" >The beginning of the Paleozoic Era is marked by the first appearance of hard body parts like shells, spikes, teeth, and scales; and the appearance in the rock record of most animal phyla known today. That is, most basic animal body plans appeared in the rock record during the Cambrian Period. This sudden appearance of biological diversity is called the Cambrian Explosion. Scientists debate whether this sudden appearance is more from a rapid evolutionary diversification as a result of a warmer climate following the late Proterozoic glacial environments, better preservation and fossilization of hard parts, or artifacts of a more complete and recent rock record. For example, fauna may have been diverse during the Ediacaran Period, setting the state for the Cambrian Explosion, but they lacked hard body parts and would have left few fossils behind. Regardless, during the Cambrian Period 541–485 million years ago marked the appearance of most animal phyla.
+        <br></br>
+        <img src="img/history_Opabinia.jpg" width="25%" style="float: left;"> One of the best fossil sites for the Cambrian Explosion was discovered in 1909 by Charles Walcott (1850–1927) in the Burgess Shale in western Canada. The Burgess Shale is a Lagerstätte, a site of exceptional fossil preservation that includes impressions of soft body parts. This discovery allowed scientists to study Cambrian animals in immense detail because soft body parts are not normally preserved and fossilized. Other Lagerstätte sites of similar age in China and Utah have allowed scientist to form a detailed picture of Cambrian biodiversity. The biggest mystery surrounds animals that do not fit existing lineages and are unique to that time. This includes many famous fossilized creatures: the first compound-eyed trilobites; Wiwaxia, a creature covered in spiny plates; Hallucigenia, a walking worm with spikes; Opabinia, a five-eyed arthropod with a grappling claw; and Anomalocaris, the alpha predator of its time, complete with grasping appendages and circular mouth with sharp plates. Most notably appearing during the Cambrian is an important ancestor to humans. A segmented worm called Pikaia is thought to be the earliest ancestor of the Chordata phylum that includes vertebrates, animals with backbones. 
+        <br></br>
+        By the end of the Cambrian, mollusks, brachiopods, nautiloids, gastropods, graptolites, echinoderms, and trilobites covered the sea floor. Although most animal phyla appeared by the Cambrian, the biodiversity at the family, genus, and species level was low until the Ordovician Period. During the Great Ordovician Biodiversification Event, vertebrates and invertebrates (animals without backbone) became more diverse and complex at family, genus, and species level. The cause of the rapid speciation event is still debated but some likely causes are a combination of warm temperatures, expansive continental shelves near the equator, and more volcanism along the mid-ocean ridges. Some have shown evidence that an asteroid breakup event and consequent heavy meteorite impacts correlate with this diversification event. The additional volcanism added nutrients to ocean water helping support a robust ecosystem. Many life forms and ecosystems that would be recognizable in current times appeared at this time. Mollusks, corals, and arthropods in particular multiplied to dominate the oceans.
+        <br></br>
+        One important evolutionary advancement during the Ordovician Period was reef-building organisms, mostly colonial coral. Corals took advantage of the ocean chemistry, using calcite to build large structures that resembled modern reefs like the Great Barrier Reef off the coast of Australia. These reefs housed thriving ecosystems of organisms that swam around, hid in, and crawled over them. Reefs are important to paleontologists because of their preservation potential, massive size, and in-place ecosystems. Few other fossils offer more diversity and complexity than reef assemblages.
+        <br></br>
+        According to evidence from glacial deposits,  a small ice age caused sea-levels to drop and led to a major mass extinction by the end of the Ordovician. This is the earliest of five mass extinction events documented in the fossil record. During this mass extinction, an unusually large number of species abruptly disappear in the fossil record
+        <br></br>
+        Life bounced back during the Silurian period. The major evolutionary event was the development of the forward pair of gill arches into jaws, allowing fish new feeding strategies and opening up new ecological niches.
+        <br></br>
+        <img src="img/history_Placoderm.jpg" width="30%" style="float:right">Life bounced back during the Silurian period. The period’s major evolutionary event was the development of jaws from the forward pair of gill arches in bony fishes and sharks. Hinged jaws allowed fish to exploit new food sources and ecological niches. This period also included the start of armored fishes, known as the placoderms. In addition to fish and jaws, Silurian rocks provide the first evidence of terrestrial or land-dwelling plants and animals. The first vascular plant, Cooksonia, had woody tissues, pores for gas exchange, and veins for water and food transport. Insects, spiders, scorpions, and crustaceans began to inhabit moist, freshwater terrestrial environments.  
+        <br></br>
+        <img src="img/history_Fishapods.png" alt="" width="30%" style="float: left;">The Devonian Period is called the Age of Fishes due to the rise in plated, jawed, and lobe-finned fishes . The lobe-finned fishes, which were related to the modern lungfish and coelacanth, are important for their eventual evolution into tetrapods, four-limbed vertebrate animals that can walk on land.  The first lobe-finned land-walking fish, named Tiktaalik, appeared about 385 million years ago and serves as a transition fossil between fish and early tetrapods. Though Tiktaalik was clearly a fish, it had some tetrapod structures as well. Several fossils from the Devonian are more tetrapod like than fish like but these weren’t fully terrestrial. The first fully terrestrial tetrapod arrived in the Mississippian (early Carboniferous) period. By the Mississippian (early Carboniferous) period, tetrapods had evolved into two main groups, amphibians and amniotes, from a common tetrapod ancestor. The amphibians were able to breathe air and live on land but still needed water to nurture their soft eggs. The first reptile (an amniote) could live and reproduce entirely on land with hard-shelled eggs that wouldn’t dry out.
+        <br></br>
+        Land plants had also evolved into the first trees and forests. Toward the end of the Devonian, another mass extinction event occurred. This extinction, while severe, is the least temporally defined, with wide variations in the timing of the event or events. Reef building organisms were the hardest hit, leading to dramatic changes in marine ecosystems.
+        <br></br>
+        <img src="img/history_Arthropleura.png" alt="" width="30%" style="float:right"> The next time period, called the Carboniferous (North American geologists have subdivided this into the Mississippian and Pennsylvanian periods), saw the highest levels of oxygen ever known, with forests (e.g., ferns, club mosses) and swamps dominating the landscape . This helped cause the largest arthropods ever, like the millipede Arthropleura, at 2.5 meters (6.4 feet) long! It also saw the rise of a new group of animals, the reptiles. The evolutionary advantage that reptiles have over amphibians is the amniote egg (egg with a protective shell), which allows them to rely on non-aquatic environments for reproduction. This widened the terrestrial reach of reptiles compared to amphibians. This booming life, especially plant life, created cooling temperatures as carbon dioxide was removed from the atmosphere. By the middle Carboniferous, these cooler temperatures led to an ice age (called the Karoo Glaciation) and less-productive forests. The reptiles fared much better than the amphibians, leading to their diversification. This glacial event lasted into the early Permian.
+        <br></br>
+        <img src="img/history_Dimetrodon_grandis.jpg" alt="" width="50%" style="float:left"> By the Permian, with Pangea assembled, the supercontinent led to a dryer climate, and even more diversification and domination by the reptiles. The groups that developed in this warm climate eventually radiated into dinosaurs. Another group, known as the synapsids, eventually evolved into mammals. Synapsids, including the famous sail-backed Dimetrodon are commonly confused with dinosaurs. Pelycosaurs (of the Pennsylvanian to early Permian like Dimetrodon) are the first group of synapsids that exhibit the beginnings of mammalian characteristics such as well-differentiated dentition: incisors, highly developed canines in lower and upper jaws and cheek teeth, premolars and molars. Starting in the late Permian, a second group of synapsids, called the therapsids (or mammal-like reptiles) evolve, and become the ancestors to mammals.
+      </div>
+    </div>  
+      <br></br>
+    <div class="main" id="PaleozoicMesozoic"></div>
+    <h3>Phanerozoic Eon: Mesozoic Era</h3>
+    <div class="col-sm-12">
+      <div class="image">
+        <img src="img/history_Fighting_dinosaurs.jpg" width="30%" style="float:right" >Following the Permian Mass Extinction, the Mesozoic (“middle life”) was from 252 million years ago to 66 million years ago. As Pangea started to break apart, mammals, birds, and flowering plants developed. The Mesozoic is probably best known as the age of reptiles, most notably, the dinosaurs.
+        <br></br>
+        Pangea started breaking up (in a region that would become eastern Canada and United States) around 210  million years ago in the Late Triassic. Clear evidence for this includes the age of the sediments in the Newark Supergroup rift basins and the Palisades sill of the eastern part of North America and the age of the Atlantic ocean floor. Due to sea-floor spreading, the oldest rocks on the Atlantic’s floor are along the coast of northern Africa and the east coast of  North America, while the youngest are along the mid-ocean ridge.
+        <br></br>
+        <img src="img/history_age_oceanic_lith.jpg" alt="" width="30%" style="float: left;">This age pattern shows how the Atlantic Ocean opened as the young Mid-Atlantic Ridge began to create the seafloor. This means the Atlantic ocean started opening and was first formed here. The southern Atlantic opened next, with South America separating from central and southern Africa. Last (happening after the Mesozoic ended) was the northernmost Atlantic, with Greenland and Scandinavia parting ways. The breaking points of each rifted plate margin eventually turned into the passive plate boundaries of the east coast of the Americas today.
+        <br></br>
+        In western North America, an active plate margin had started with subduction, controlling most of the tectonics of that region in the Mesozoic. Another possible island-arc collision created the Sonoman Orogeny in Nevada during the latest Paleozoic to the Triassic. In the Jurassic, another island-arc collision caused the Nevadan Orogeny, a large Andean-style volcanic arc and thrust belt. The Sevier Orogeny followed in the Cretaceous, which was mainly a volcanic arc to the west and a thin-skinned fold and thrust belt to the east, meaning stacks of shallow faults and folds built up the topography. Many of the structures in the Rocky Mountains today date from this orogeny.
+        <br></br>
+        <video width="75%" height="50%" controls>
+          <source src="img/history_PangeaEADef.mp4" type="video/mp4">
+        </video>
+        <br></br>
+        Tectonics had an influence in one more important geographic feature in North America: the Cretaceous Western Interior Foreland Basin, which flooded during high sea levels forming the Cretaceous Interior Seaway. Subduction from the west was the Farallon Plate, an oceanic plate connected to the Pacific Plate (seen today as remnants such as the Juan de Fuca Plate, off the coast of the Pacific Northwest). Subduction was shallow at this time because a very young, hot and less dense portion of the Farallon plate was subducted. This shallow subduction caused a downwarping in the central part of North America. High sea levels due to shallow subduction, and increasing rates of seafloor spreading and subduction, high temperatures, and melted ice also contributed to the high sea levels. These factors allowed a shallow epicontinental seaway that extended from the Gulf of Mexico to the Arctic Ocean to divide North America into two separate land masses, Laramidia to the west and Appalachia to the east, for 25 million years. Many of the coal deposits in Utah and Wyoming formed from swamps along the shores of this seaway. By the end of the Cretaceous, cooling temperatures caused the seaway to regress.
+      </div>
+    </div>  
+      <br></br>    
+    <div class="main" id="MesozoicEvolution"></div>
+    <h3>Mesozoic Evolution</h3>
+    <div class="col-sm-12">
+      <div class="image">
+        <img src="img/history_Mesozoic_Scene.jpg" width="30%" style="float:left" >The Mesozoic era is dominated by reptiles, and more specifically, the dinosaurs. The Triassic saw devastated ecosystems that took over 30 million years to fully re-emerge after the Permian Mass Extinction.  The first appearance of many modern groups of animals that would later flourish occurred at this time.  This includes frogs (amphibians), turtles (reptiles), marine ichthyosaurs and plesiosaurs (marine reptiles), mammals, and the archosaurs.  The archosaurs (“ruling reptiles”) include ancestral groups that went extinct at the end of the Triassic, as well as the flying pterosaurs, crocodilians, and the dinosaurs.  Archosaurs, like the placental mammals after them, occupied all major environments: terrestrial (dinosaurs), in the air (pterosaurs), aquatic (crocodilians) and even fully marine habitats (marine crocodiles). The pterosaurs, the first vertebrate group to take flight, like the dinosaurs and mammals, start small in the Triassic.
+        <br></br>
+        <img src="img/history_Augustasaurus_BW.jpg" alt="" width="30%" style="float: right;">At the end of the Triassic, another mass extinction event occurred, the fourth major mass extinction in the geologic record. This was perhaps caused by the Central Atlantic Magmatic Province flood basalt. The end-Triassic extinction made certain lineages go extinct and helped spur the evolution of survivors like mammals, pterosaurs (flying reptiles), ichthyosaurs/plesiosaurs/mosasaurs (marine reptiles), and dinosaurs.
+        <br></br>
+        <img src="img/history_Megazostrodon_sp._Natural_History_Museum_-_London.jpg" alt="" width="40%" style="float: left;">Mammals, as previously mentioned, got their start from a reptilian synapsid ancestor possibly in the late Paleozoic. Mammals stayed small, in mainly nocturnal niches, with insects being their largest prey. The development of warm-blooded circulation and fur may have been a response to this lifestyle.
+        <br></br>
+        In the Jurassic, species that were previously common, flourished due to a warmer and more tropical climate. The dinosaurs were relatively small animals in the Triassic period of the Mesozoic, but became truly massive in the Jurassic.  Dinosaurs are split into two groups based on their hip structure, i.e. orientation of the pubis and ischium bones in relationship to each other.  This is referred to as the “reptile hipped” saurischians and the “bird hipped” ornithischians. This has recently been brought into question by a new idea for dinosaur lineage.
+        <br></br>
+        <img src="img/history_Beipiao1mmartyniuk.png" alt="" width="30%" style="float:right"> Most of the dinosaurs of the Triassic were saurischians, but all of them were bipedal. The major adaptive advantage dinosaurs had was changes in the hip and ankle bones, tucking the legs under the body for improved locomotion as opposed to the semi-erect gait of crocodiles or the sprawling posture of reptiles. In the Jurassic, limbs (or a lack thereof) were also important to another group of reptiles, leading to the evolution of Eophis, the oldest snake.
+        <br></br>
+        There is a paucity of dinosaur fossils from the Early and Middle Jurassic, but by the Late Jurassic they were dominating the planet. The saurischians diversified into the giant herbivorous (plant-eating) long-necked sauropods weighing up to 100 tons and bipedal carnivorous theropods, with the possible exception of the Therizinosaurs. All of the ornithischians (e.g Stegosaurus, Iguanodon, Triceratops, Ankylosaurus, Pachycephhlosaurus) were herbivorous with a strong tendency to have a “turtle-like” beak at the tips of their mouths.
+        <br></br>
+        <img src="img/history_Archaeopteryx_lithographica_Berlin_specimen.jpg" alt="" width="30%" style="float: left;">The pterosaurs grew and diversified in the Jurassic, and another notable arial organism developed and thrived in the Jurassic: birds. When Archeopteryx was found in the Solnhofen Lagerstätte of Germany, a seeming dinosaur-bird hybrid, it started the conversation on the origin of birds. The idea that birds evolved from dinosaurs occurred very early in the history of research into evolution, only a few years after Darwin’s On the Origin of Species. This study used a remarkable fossil of Archeopteryx from a transitional animal between dinosaurs and birds. Small meat-eating theropod dinosaurs were likely the branch that became birds due to their similar features. A significant debate still exists over how and when powered flight evolved. Some have stated a running-start model, while others have favored a tree-leaping gliding model or even a semi-combination: flapping to aid in climbing.
+        <br></br>
+        <img src="img/history_Argentinosaurus_DSC_2943.jpg" alt="" width="30%" style="float: right;">The Cretaceous saw a further diversification, specialization, and domination of the dinosaurs and other fauna. One of the biggest changes on land was the transition to angiosperm-dominated flora. Angiosperms, which are plants with flowers and seeds, had originated in the Cretaceous, switching many plains to grasslands by the end of the Mesozoic. By the end of the period, they had replaced gymnosperms (evergreen trees) and ferns as the dominant plant in the world’s forests. Haplodiploid eusocial insects (bees and ants) are descendants from Jurassic wasp-like ancestors that co-evolved with the flowering plants during this time period. The breakup of Pangea not only shaped our modern world’s geography, but biodiversity at the time as well. Throughout the Mesozoic, animals on the isolated, now separated island continents (formerly parts of Pangea), took strange evolutionary turns. This includes giant titanosaurian sauropods (Argentinosaurus) and theropods (Giganotosaurus) from South America.
+        <br></br>
+        Similar to the end of the Paleozoic era, the Mesozoic Era ended with the K-Pg Mass Extinction (previously known as the K-T Extinction) 66 million years ago. This extinction event was likely caused by a large bolide (an extraterrestrial impactor such as an asteroid, meteoroid, or comet) that collided with earth. Ninety percent of plankton species, 75% of plant species, and all the dinosaurs went extinct at this time.
+        <br></br>
+        <img src="img/history_Impact_event.jpg" alt="" width="30%" style="float: left;">One of the strongest pieces of evidence comes from the element iridium. Quite rare on Earth, and more common in meteorites, it has been found all over the world in higher concentrations at a particular layer of rock that formed at the time of the K-T boundary. Soon other scientists started to find evidence to back up the claim. Melted rock spheres, a special type of “shocked” quartz called stishovite, that only is found at impact sites, was found in many places around the world . The huge impact created a strong thermal pulse that could be responsible for global forest fires, strong acid rains, a corresponding abundance of ferns, the first colonizing plants after a forest fire, enough debris thrown into the air to significantly cool temperatures afterward, and a 2-km high tsunami inferred from deposits found from Texas to Alabama.
+        <br></br>
+        Still, with all this evidence, one large piece remained missing: the crater where the bolide impacted. It was not until 1991 that the crater was confirmed using petroleum company geophysical data. Even though it is the third largest confirmed crater on Earth at roughly 180 km wide, the Chicxulub Crater was hard to find due to being partially underwater and partially obscured by the dense forest canopy of the Yucatan Peninsula. Coring of the center of the impact called the peak ring contained granite, indicating the impact was so powerful that it lifted basement sediment from the crust several miles toward the surface. In 2010, an international team of scientists reviewed 20 years of research and blamed the impact for the extinction.
+        <br></br>
+        <img src="img/history_India_Geology_Zones.jpg" alt="" width="30%" style="float: right;">With all of this information, it seems like the case would be closed. However, there are other events at this time which could have partially aided the demise of so many organisms. For example, sea levels are known to be slowly decreasing at the time of the K-T event, which is tied to marine extinctions, though any study on gradual vs. sudden changes in the fossil record is flawed due to the incomplete nature of the fossil record. Another big event at this time was the Deccan Traps flood basalt volcanism in India. At over 1.3 million cubic kilometers of material, it was certainly a large source of material hazardous to ecosystems at the time, and it has been suggested as at least partially responsible for the extinction. Some have found the impact and eruptions too much of a coincidence, and have even linked the two together.
+      </div>
+    </div>  
+      <br></br>  
+    <div class="main" id="PaleozoicCenozoic"></div>
+    <h3>Phanerozoic Eon: Cenozoic Era</h3>
+    <div class="col-sm-12">
+      <div class="image">
+        <img src="img/history_Paracertherium.png" width="30%" style="float:left" >The Cenozoic, meaning “new life,” is known as the age of mammals because it is in this era that mammals came to be a dominant and large life form, including human ancestors. Birds, as well, flourished in the open niches left by the dinosaur’s demise. Most of the Cenozoic has been relatively warm, with the main exception being the ice age that started about 2.558 million years ago and (despite recent warming) continues today. Tectonic shifts in the west caused volcanism, but eventually changed the long-standing subduction zone into a transform boundary.
+        <br></br>
+        In the Cenozoic, the plates of the Earth moved into more familiar places, with the biggest change being the closing of the Tethys Sea with collisions such as the Alps, Zagros, and Himalaya, a collision that started about 57 million years ago, and continues today. Maybe the most significant tectonic feature that occurred in the Cenozoic of North America was the conversion of the west coast of California from a convergent boundary subduction zone to a transform boundary. Subduction off the coast of the western United States, which had occurred throughout the Mesozoic, had continued in the Cenozoic. After the Sevier Orogeny in the late Mesozoic, a subsequent orogeny called the Laramide Orogeny, occurred in the early Cenozoic. The Laramide was thick-skinned, different than the Sevier Orogeny. It involved deeper crustal rocks, and produced bulges that would become mountain ranges like the Rockies, Black Hills, Wind River Range, Uinta Mountains, and the San Rafael Swell. Instead of descending directly into the mantle, the subducting plate shallowed out and moved eastward beneath the continental plate affecting the overlying continent hundreds of miles east of the continental margin and building high mountains.  This occurred because the subducting plate was so young and near the spreading center and the density of the plate was therefore low and subduction was hindered. 
+        <br></br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/IDTBY5WDELg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <br></br>
+        As the mid-ocean ridge itself started to subduct, the relative motion had changed. Subduction caused a relative convergence between the subducting Farallon plate and the North American plate. On the other side of the mid-ocean ridge from the Farallon plate was the Pacific plate, which was moving away from the North American plate. Thus, as the subduction zone consumed the mid-ocean ridge, the relative movement became transform instead of convergent, which went on to become the San Andreas Fault System. As the San Andreas grew, it caused east-west directed extensional forces to spread over the western United States, creating the Basin and Range province. The transform fault switched position over the last 18 million years, twisting the mountains around Los Angeles, and new faults in the southeastern California deserts may become a future San Andreas-style fault. During this switch from subduction to transform, the nearly horizontal Farallon slab began to sink into the mantle. This caused magmatism as the subducting slab sank, allowing asthenosphere material to rise around it. This event is called the Oligocene ignimbrite flare-up, which was one of the most significant periods of volcanism ever, including the largest single confirmed eruption, the 5000 cubic kilometer Fish Canyon Tuff.
+      </div>
+    </div>  
+      <br></br>     
+    <div class="main" id="CenozoicEvolution"></div>
+    <h3>Cenozoic Evolution</h3>
+    <div class="col-sm-12">
+      <div class="image">
+        <img src="img/history_Hominidae_chart.png" width="30%" style="float:left" >There are five groups of early mammals in the fossil record, based primarily on fossil teeth, the hardest bone in vertebrate skeletons. For the purpose of this text, the most important group are the Eupantotheres, that diverge into the two main groups of mammals, the marsupials (like Sinodelphys) and placentals or eutherians (like Eomaia) in the Cretaceous and then diversified in the Cenozoic.  The marsupials dominated on the isolated island continents of South America and Australia, and many went extinct in South America with the introduction of placental mammals. Some well-known mammal groups have been highly studied with interesting evolutionary stories in the Cenozoic. For example, horses started small with four toes, ended up larger and having just one toe. Cetaceans (marine mammals like whales and dolphins) started on land from small bear-like (mesonychids) creatures in the early Cenozoic and gradually took to water. However, no study of evolution has been more studied than human evolution. Hominids, the name for human-like primates, started in eastern Africa several million years ago.
+        <br></br>
+        <img src="img/history_Lucy_Skeleton.jpg" width="30%" style="float:right" >The first critical event in this story is an environmental change from jungle to more of a savanna, probably caused by changes in Indian Ocean circulation. While bipedalism is known to have evolved before this shift, it is generally believed that our bipedal ancestors (like Australopithecus) had an advantage by covering ground more easily in a more open environment compared to their non-bipedal evolutionary cousins. There is also a growing body of evidence, including the famous “Lucy” fossil of an Australopithecine, that our early ancestors lived in trees. Arboreal animals usually demand a high intelligence to navigate through a three-dimensional world. It is from this lineage that humans evolved, using endurance running as a means to acquire more resources and possibly even hunt. This can explain many uniquely human features, from our long legs, strong achilles, lack of lower gut protection, and our wide range of running efficiencies.
+        <br><br>
+        <img src="img/history_Spreading_homo_sapiens.png" width="30%" style="float:left" >Now that the hands are freed up, the next big step is a large brain. There have been arguments from a switch to more meat eating, cooking with fire, tool use, and even the construct of society itself to explain this increase in brain size. Regardless of how, it was this increased cognitive power that allowed humans to reign as their ancestors moved out of Africa and explored the world, ultimately entering the Americas through land bridges like the Bering Land Bridge. The details of this worldwide migration and the different branches of the hominid evolutionary tree are very complex, and best reserved for its own course.
+        <br><br>
+        Humans have had an influence on the Earth, its ecosystems and climate. Yet, human activity can not explain all of the changes that have occurred in the recent past. The start of the Quaternary period, the last and current period of the Cenozoic, is marked by the start of our current ice age 2.58 million years ago. During this time period, ice sheets advanced and retreated, most likely due to Milankovitch cycles (see ch. 15). Also at this time, various cold-adapted megafauna emerged (like giant sloths, saber-tooth cats, and woolly mammoths), and most of them went extinct as the Earth warmed from the most recent glacial maximum. A long-standing debate is over the cause of these and other extinctions. Is climate warming to blame, or were they caused by humans? Certainly, we know of recent human extinctions of animals like the dodo or passenger pigeon. Can we connect modern extinctions to extinctions in the recent past? If so, there are several ideas as to how this happened. Possibly the most widely accepted and oldest is the hunting/overkill hypothesis. The idea behind this hypothesis is that humans hunted large herbivores for food, then carnivores could not find food, and human arrival times in locations has been shown to be tied to increased extinction rates in many cases.      
+        <br></br>
+        Modern human impact on the environment and the Earth as a whole is unquestioned. In fact, many scientists are starting to suggest that the rise of human civilization ended and/or replaced the Holocene epoch and defines a new geologic time interval: the Anthropocene. Evidence for this change includes extinctions, increased tritium (hydrogen with two neutrons) due to nuclear testing, rising pollutants like carbon dioxide, more than 200 never-before seen mineral species that have occurred only in this epoch, materials such as plastic and metals which will be long lasting “fossils” in the geologic record, and large amounts of earthen material moved. The biggest scientific debate with this topic is the starting point. Some say that humans’ invention of agriculture would be recognized in geologic strata and that should be the starting point, around 12,000 years ago. Others link the start of the industrial revolution and the subsequent addition of vast amounts of carbon dioxide in the atmosphere. Either way, the idea is that alien geologists visiting Earth in the distant future would easily recognize the impact of humans on the Earth as the beginning of a new geologic period.
+      </div>
+    </div>        
+  </div>
+</div>
+</div>
+  <div class="col-sm-2" style="background-color: white;">
+    <div id="outer">
+      <h4>On this page</h4>
+      <a href="#universe">Origin of the Universe</a>
+      <br></br>
+      <a href="#bigbang">Big-Bang Theory</a>
+      <br></br>
+      <a href="#stellar">Stellar Evolution</a>
+      <br></br>
+      <a href="#originSolar">Origin of the Solar System: The Nebular Hypothesis</a>
+      <br></br>
+      <a href="#planet">Planet Arrangement and Segregation</a>
+      <br></br>
+      <a href="#originEarth">Origin of Earth’s Crust</a>
+      <br></br>
+      <a href="#originMoon">Origin of the Moon</a>
+      <br></br>
+      <a href="#originEarthWater">Origin of Earth’s Water</a>
+      <br></br>
+      <a href="#archeanEon">Archean Eon</a>
+      <br></br>
+      <a href="#originContinents">Origin of the Continents</a>
+      <br></br>
+      <a href="#firstLife">First Life on Earth</a>
+      <br></br>
+      <a href="#Proterozoic">Proterozoic Eon</a>
+      <br></br>
+      <a href="#Rodinia">Rodinia</a>
+      <br></br>
+      <a href="#lifeEvolves">Life Evolves</a>
+      <br></br>
+      <a href="#PaleozoicEra">Phanerozoic Eon: Paleozoic Era</a>
+      <br></br>
+      <a href="#PaleozoicTectonics">Paleozoic Tectonics and Paleogeography</a>
+      <br></br>
+      <a href="#PaleozoicEvolution">Paleozoic Evolution</a>
+      <br></br>
+      <a href="#PaleozoicMesozoic">Phanerozoic Eon: Mesozoic Era</a>
+      <br></br>
+      <a href="#MesozoicEvolution">Mesozoic Evolution</a>
+      <br></br>
+      <a href="#PaleozoicCenozoic">Phanerozoic Eon: Cenozoic Era</a>
+      <br></br>
+      <a href="#CenozoicEvolution">Cenozoic Evolution</a>
+      <br></br>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+  <footer>
+    <div class="footer">Copyright © ABC Team - April, 2020</div>
+  </footer>
+  </html>

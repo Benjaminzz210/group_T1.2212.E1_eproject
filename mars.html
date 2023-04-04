@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <script src="index.js"></script>
+  <script async src="https://api.countapi.xyz/hit/astronomy.com/visits?callback=cb"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="amazing.css">
+</head>
+  <body>
+    <header class="navbar navbar-expand-lg navbar-collapse-sm">
+      <div class="container-fluid">
+        <a href="home.html"><img src="img/logo.png"></a>
+        <div class="col-10" style="color: white; font-weight: bolder; font-size: large;">
+          Number of visitors: <span id="visits"></span>
+        </div>
+      </div>
+    </header>  
+    <nav class="navbar navbar-expand-lg navbar-collapse-sm">
+    <ul class="nav nav-tabs container pt-10">
+      <li class="nav-item dropdown" id="menu">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Star Gazing</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="where.html">Best place for Gazing</a></li>
+          <li><a class="dropdown-item" href="what.html">What we can see</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown" id="menu">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Planet</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="mecury.html">Mecury</a></li>
+            <li><a class="dropdown-item" href="venus.html">Venus</a></li>
+            <li><a class="dropdown-item" href="earth.html">Earth</a></li>
+            <li><a class="dropdown-item" href="mars.html">Mars</a></li>
+            <li><a class="dropdown-item" href="jupiter.html">Jupiter</a></li>
+            <li><a class="dropdown-item" href="saturn.html">Saturn</a></li>
+            <li><a class="dropdown-item" href="uranus.html">Uranus</a></li>
+            <li><a class="dropdown-item" href="neptune.html">Neptune</a></li>
+          </ul>
+        </li> 
+        <li class="nav-item dropdown" id="menu">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Star and Asteroid</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="sun.html">Sun</a></li>
+              <li><a class="dropdown-item" href="moon.html">Moon</a></li>
+              <li><a class="dropdown-item" href="Halley_comet.html">Halley</a></li>
+              <li><a class="dropdown-item" href="shoemaker_levy9.html">Shoe Maker Levy-9</a></li>
+              <li><a class="dropdown-item" href="hyakutake.html">Hyakutake</a></li>
+            </ul>
+          </li> 
+        <li class="nav-item dropdown" id="menu">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Constellation</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="aries.html">Aries</a></li>
+            <li><a class="dropdown-item" href="taurus.html">Taurus</a></li>
+            <li><a class="dropdown-item" href="gemini.html">Gemini</a></li>
+            <li><a class="dropdown-item" href="cancer.html">Cancer</a></li>
+            <li><a class="dropdown-item" href="leo.html">Leo</a></li>
+            <li><a class="dropdown-item" href="virgo.html">Virgo</a></li>
+            <li><a class="dropdown-item" href="libra.html">Libra</a></li>
+            <li><a class="dropdown-item" href="scorpio.html">Scorpio</a></li>
+            <li><a class="dropdown-item" href="sagi.html">Sagittarius</a></li>
+            <li><a class="dropdown-item" href="capricon.html">Capricorn</a></li>
+            <li><a class="dropdown-item" href="auarius.html">Aquarius</a></li>
+            <li><a class="dropdown-item" href="pisces.html">Pisces</a></li>
+          </ul>
+        </li>
+        <li class="nav-item" id="menu">
+          <a class="nav-link active" href="history.html">History</a>
+        </li>
+        <li class="nav-item" id="menu">
+          <a class="nav-link active" href="con">Contact Us</a>
+        </li>
+    </ul>
+  </nav>
+  <div style="position: fixed; bottom: 0; width: 100%; background-color: black; color: white;">
+    <marquee>
+      <span id="date"></span> | <span id="time"></span> | <span id="location"></span>
+    </marquee>
+  </div>
+  <h1 style="text-align: center"><strong>MARS</strong></h1>
+    <div class="main" id="overview"></div>
+    <div class="row">
+      <div class="col-sm-2" style="background-color: white;" >
+        <h2>Quick facts:</h2>
+        <h4>Day</h4>
+        <h6>24.6 hours</h6>
+        <h4>Year</h4>
+        <h6>669.6 sols | 687 Earth days</h6>
+        <h4>Radius</h4>
+        <h6>2,106 miles | 3,390 kilometers</h6>
+        <h4>Planet Type</h4>
+        <h6>Terrestrial</h6>
+        <h4>Moons</h4>
+        <h6>2</h6>
+      </div>
+    <div class="col-sm-8" style="background-color: white;"> 
+        <br></br>
+        <b style="color:black">Mars is the fourth planet from the Sun – a dusty, cold, desert world with a very thin atmosphere. Mars is also a dynamic planet with seasons, polar ice caps, canyons, extinct volcanoes, and evidence that it was even more active in the past.</b>
+        <br></br>
+        <b style="color:black">Mars is one of the most explored bodies in our solar system, and it's the only planet where we've sent rovers to roam the alien landscape.</b>
+        <br></br>
+        <b style="color: black">NASA currently has two rovers (Curiosity and Perseverance), one lander (InSight), and one helicopter (Ingenuity) exploring the surface of Mars.</b>
+        <br></br>
+        <b style="color: black">Perseverance rover – the largest, most advanced rover NASA has sent to another world – touched down on Mars on Feb. 18, 2021, after a 203-day journey traversing 293 million miles (472 million kilometers). The Ingenuity helicopter rode to Mars attached to the belly of Perseverance.</b>
+        <br></br>
+        <b style="color: black">Perseverance is one of three spacecraft that arrived at Mars in 2021. The Hope orbiter from the United Arab Emirates arrived on Feb. 9, 2021. China’s Tianwen-1 mission arrived on Feb. 10, 2021, and includes an orbiter, a lander, and a rover. Europe and India also have spacecraft studying Mars from orbit.</b>
+        <br></br>
+        <b style="color: black">These robotic explorers have found lots of evidence that Mars was much wetter and warmer, with a thicker atmosphere, billions of years ago.</b>
+        <br></br>
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+        </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/mars1.jpg" alt="picvenus1" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="img/mars2.jpg" alt="picvenus2" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="img/mars3.jpg" alt="picvenus3" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="img/mars4.jpg" alt="picvenus4" class="d-block w-100">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    <div>Mars is no place for the faint-hearted. It’s dry, rocky, and bitter cold. The fourth planet from the Sun, Mars is one of Earth's two closest planetary neighbors (Venus is the other). Mars is one of the easiest planets to spot in the night sky – it looks like a bright red point of light.</div>
+    <br></br>
+    <div>Despite being inhospitable to humans, robotic explorers – like NASA's new Perseverance rover – are serving as pathfinders to eventually get humans to the surface of the Red Planet.</div>
+    <br></br>
+  <div class="main" id="namesake"></div>
+  <h1>Namesake</h1> 
+  <div>Mars was named by the ancient Romans for their god of war because its reddish color was reminiscent of blood. Other civilizations also named the planet for this attribute – for example, the Egyptians called it "Her Desher," meaning "the red one." Even today, it is frequently called the "Red Planet" because iron minerals in the Martian dirt oxidize, or rust, causing the surface to look red.</div>
+  <br></br>
+  <div class="main" id="potenialforlife"></div>
+  <h1>Potential for Life</h1>
+  <div>Scientists don't expect to find living things currently thriving on Mars. Instead, they're looking for signs of life that existed long ago, when Mars was warmer and covered with water.</div>
+  <br></br>
+  <div class="main" id="sizeanddistance"></div>
+  <h1>Size and Distance</h1>
+  <div>With a radius of 2,106 miles (3,390 kilometers), Mars is about half the size of Earth. If Earth were the size of a nickel, Mars would be about as big as a raspberry.</div>
+  <br></br>
+  <div>From an average distance of 142 million miles (228 million kilometers), Mars is 1.5 astronomical units away from the Sun. One astronomical unit (abbreviated as AU), is the distance from the Sun to Earth. From this distance, it takes sunlight 13 minutes to travel from the Sun to Mars.</div>
+  <br></br>
+  <div class="main" id="orbitandrotation"></div>
+  <h1>Orbit and Rotation</h1>
+  <div>As Mars orbits the Sun, it completes one rotation every 24.6 hours, which is very similar to one day on Earth (23.9 hours). Martian days are called sols – short for "solar day." A year on Mars lasts 669.6 sols, which is the same as 687 Earth days.</div>
+  <br></br>
+  <div>Mars' axis of rotation is tilted 25 degrees with respect to the plane of its orbit around the Sun. This is another similarity with Earth, which has an axial tilt of 23.4 degrees. Like Earth, Mars has distinct seasons, but they last longer than seasons here on Earth since Mars takes longer to orbit the Sun (because it's farther away). And while here on Earth the seasons are evenly spread over the year, lasting 3 months (or one quarter of a year), on Mars the seasons vary in length because of Mars' elliptical, egg-shaped orbit around the Sun.</div>
+  <br></br>
+  <div>Spring in the northern hemisphere (autumn in the southern) is the longest season at 194 sols. Autumn in the northern hemisphere (spring in the southern) is the shortest at 142 days. Northern winter/southern summer is 154 sols, and northern summer/southern winter is 178 sols.</div>
+  <br></br>
+  <div class="main" id="moons"></div>
+  <h1>Moons</h1>
+  <div>Mars has two small moons, Phobos and Deimos, that may be captured asteroids. They're potato-shaped because they have too little mass for gravity to make them spherical.</div>
+  <br></br>
+  <div>The moons get their names from the horses that pulled the chariot of the Greek god of war, Ares.</div>
+  <br></br>
+  <div>Phobos, the innermost and larger moon, is heavily cratered, with deep grooves on its surface. It is slowly moving towards Mars and will crash into the planet or break apart in about 50 million years.</div>
+  <br></br>
+  <div>Deimos is about half as big as Phobos and orbits two and a half times farther away from Mars. Oddly-shaped Deimos is covered in loose dirt that often fills the craters on its surface, making it appear smoother than pockmarked Phobos.</div>
+  <br></br>
+  <div class="main" id="rings"></div>
+  <h1>Rings</h1>
+  <div>Mars has no rings. However, in 50 million years when Phobos crashes into Mars or breaks apart, it could create a dusty ring around the Red Planet.</div>
+  <br></br>
+  <div class="main" id="formation"></div>
+  <h1>Formation</h1>
+  <div>When the solar system settled into its current layout about 4.5 billion years ago, Mars formed when gravity pulled swirling gas and dust in to become the fourth planet from the Sun. Mars is about half the size of Earth, and like its fellow terrestrial planets, it has a central core, a rocky mantle, and a solid crust.</div>
+  <br></br>
+  <div class="main" id="structure"></div>
+  <h1>Structure</h1>
+  <div>Mars has a dense core at its center between 930 and 1,300 miles (1,500 to 2,100 kilometers) in radius. It's made of iron, nickel, and sulfur. Surrounding the core is a rocky mantle between 770 and 1,170 miles (1,240 to 1,880 kilometers) thick, and above that, a crust made of iron, magnesium, aluminum, calcium, and potassium. This crust is between 6 and 30 miles (10 to 50 kilometers) deep.</div>
+  <br></br>
+  <div class="main" id="surface"></div> 
+  <h1>Surface</h1>
+  <div>The Red Planet is actually many colors. At the surface, we see colors such as brown, gold, and tan. The reason Mars looks reddish is due to oxidization – or rusting – of iron in the rocks, regolith (Martian “soil”), and dust of Mars. This dust gets kicked up into the atmosphere and from a distance makes the planet appear mostly red.</div>
+  <br></br>
+  <div>Interestingly, while Mars is about half the diameter of Earth, its surface has nearly the same area as Earth’s dry land. Its volcanoes, impact craters, crustal movement, and atmospheric conditions such as dust storms have altered the landscape of Mars over many years, creating some of the solar system's most interesting topographical features.</div>
+  <br></br>
+  <div>A large canyon system called Valles Marineris is long enough to stretch from California to New York – more than 3,000 miles (4,800 kilometers). This Martian canyon is 200 miles (320 kilometers) at its widest and 4.3 miles (7 kilometers) at its deepest. That's about 10 times the size of Earth's Grand Canyon.</div>
+  <br></br>
+  <div>Mars is home to the largest volcano in the solar system, Olympus Mons. It's three times taller than Earth's Mt. Everest with a base the size of the state of New Mexico.</div>
+  <br></br>
+  <div>Mars appears to have had a watery past, with ancient river valley networks, deltas, and lakebeds, as well as rocks and minerals on the surface that could only have formed in liquid water. Some features suggest that Mars experienced huge floods about 3.5 billion years ago.</div>
+  <br></br>
+  <div>There is water on Mars today, but the Martian atmosphere is too thin for liquid water to exist for long on the surface. Today, water on Mars is found in the form of water-ice just under the surface in the polar regions as well as in briny (salty) water, which seasonally flows down some hillsides and crater walls.</div>
+  <br></br>
+  <div class="main" id="atmosphere"></div>
+  <h1>Atmosphere</h1>
+  <div>Mars has a thin atmosphere made up mostly of carbon dioxide, nitrogen, and argon gases. To our eyes, the sky would be hazy and red because of suspended dust instead of the familiar blue tint we see on Earth. Mars' sparse atmosphere doesn't offer much protection from impacts by such objects as meteorites, asteroids, and comets.</div>
+  <br></br>
+  <div>The temperature on Mars can be as high as 70 degrees Fahrenheit (20 degrees Celsius) or as low as about -225 degrees Fahrenheit (-153 degrees Celsius). And because the atmosphere is so thin, heat from the Sun easily escapes this planet. If you were to stand on the surface of Mars on the equator at noon, it would feel like spring at your feet (75 degrees Fahrenheit or 24 degrees Celsius) and winter at your head (32 degrees Fahrenheit or 0 degrees Celsius).</div>
+  <br></br>
+  <div>Occasionally, winds on Mars are strong enough to create dust storms that cover much of the planet. After such storms, it can be months before all of the dust settles.</div>
+  <br></br>
+  <div class="main" id="magnetosphere"></div>
+  <h1>Magnetosphere</h1>
+  <div>Mars has no global magnetic field today, but areas of the Martian crust in the southern hemisphere are highly magnetized, indicating traces of a magnetic field from 4 billion years ago.​</div>
+</div> 
+  <div class="col-sm-2" style="background-color: white;">
+    <div id="outer">
+  <h4>On this page</h4>
+  <a href="#overview">Overview</a>
+  <br></br>
+  <a href="#namesake">Namesake</a>
+  <br></br>
+  <a href="#potenialforlife">Potenial for life</a>
+  <br></br>
+  <a href="#sizeanddistance">Size and distance</a>
+  <br></br>
+  <a href="#orbitandrotation">Orbit and rotation</a>
+  <br></br>
+  <a href="#moons">Moons</a>
+  <br></br>
+  <a href="#rings">Rings</a>
+  <br></br>
+  <a href="#formation">Formation</a>
+  <br></br>
+  <a href="#structure">Structure</a>
+  <br></br>
+  <a href="#surface">Surface</a>
+  <br></br>
+  <a href="#atmosphere">Atmosphere</a>
+  <br></br>
+  <a href="#magnetosphere">Magnetosphere</a>
+</div>
+</div>
+</body>
+  <footer>
+    <div class="footer">Copyright © ABC Team - April, 2020</div>
+  </footer>
+  </html>

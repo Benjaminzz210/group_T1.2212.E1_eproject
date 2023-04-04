@@ -35,3 +35,6 @@ for (var i = 0; i < menuItems.length; i++) {
   });
 }
 
+function cb(response) {
+  document.getElementById('visits').innerText = response.value;
+}

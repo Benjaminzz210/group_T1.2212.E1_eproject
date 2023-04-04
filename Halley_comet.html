@@ -5,99 +5,87 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
+  <script src="index.js"></script>
+  <script async src="https://api.countapi.xyz/hit/astronomy.com/visits?callback=cb"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="amazing.css">
 </head>
   <body>
-      <header class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a href="home.html"><img src="logo.png"></a>
-          <form class="search d-flex justify-content-between">
-            <input class="form-control me-12" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-      <nav class="collapse navbar-collapse justify-content-end">
-      <ul class="nav nav-tabs container pt-9">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Lasted News</a>
-          </li>
-          <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Planet</a>
+    <header class="navbar navbar-expand-lg navbar-collapse-sm">
+      <div class="container-fluid">
+        <a href="home.html"><img src="img/logo.png"></a>
+        <div class="col-10" style="color: white; font-weight: bolder; font-size: large;">
+          Number of visitors: <span id="visits"></span>
+        </div>
+      </div>
+    </header>  
+    <nav class="navbar navbar-expand-lg navbar-collapse-sm">
+    <ul class="nav nav-tabs container pt-10">
+      <li class="nav-item dropdown" id="menu">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Star Gazing</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="where.html">Best place for Gazing</a></li>
+          <li><a class="dropdown-item" href="what.html">What we can see</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown" id="menu">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Planet</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="mecury.html">Mecury</a></li>
+            <li><a class="dropdown-item" href="venus.html">Venus</a></li>
+            <li><a class="dropdown-item" href="earth.html">Earth</a></li>
+            <li><a class="dropdown-item" href="mars.html">Mars</a></li>
+            <li><a class="dropdown-item" href="jupiter.html">Jupiter</a></li>
+            <li><a class="dropdown-item" href="saturn.html">Saturn</a></li>
+            <li><a class="dropdown-item" href="uranus.html">Uranus</a></li>
+            <li><a class="dropdown-item" href="neptune.html">Neptune</a></li>
+          </ul>
+        </li> 
+        <li class="nav-item dropdown" id="menu">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Star and Asteroid</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="mecury.html">Mecury</a></li>
-              <li><a class="dropdown-item" href="venus.html">Venus</a></li>
-              <li><a class="dropdown-item" href="earth.html">Earth</a></li>
-              <li><a class="dropdown-item" href="mars.html">Mars</a></li>
-              <li><a class="dropdown-item" href="jupiter.html">Jupiter</a></li>
-              <li><a class="dropdown-item" href="saturn.html">Saturn</a></li>
-              <li><a class="dropdown-item" href="uranus.html">Uranus</a></li>
-              <li><a class="dropdown-item" href="neptune.html">Neptune</a></li>
+              <li><a class="dropdown-item" href="sun.html">Sun</a></li>
+              <li><a class="dropdown-item" href="moon.html">Moon</a></li>
+              <li><a class="dropdown-item" href="Halley_comet.html">Halley</a></li>
+              <li><a class="dropdown-item" href="shoemaker_levy9.html">Shoe Maker Levy-9</a></li>
+              <li><a class="dropdown-item" href="hyakutake.html">Hyakutake</a></li>
             </ul>
           </li> 
-          <li class="dropdown">
-            <a class="nav-link dropdown-toggle" id="dropdownmenubutton"data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Star and Asteroid</a>
-              <ul class="dropdown-menu" id="dropdownmenubutton">
-                <div class="dropdown-item">
-                  <div class="row"> 
-                  <a class="dropdown-item" href="#">Star:</a>
-                    <div class="col">
-                      <a href="#">Sun</a>
-                    </div>
-                    <div class="col">
-                      <a href="#">Moon</a>
-                    </div>
-                  </div>
-                  <div class="row"> 
-                  <a class="dropdown-item" href="#">Asteroid:</a>
-                    <div class="col">
-                    <a href="#">Haley</a>
-                    </div>
-                    <div class="col">
-                      <a href="#">Mona</a>
-                    </div>
-                  </div>
-                </div>
-              </ul>
-          </li>
-          <li class="dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Constellation</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Link 1</a></li>
-              <li><a class="dropdown-item" href="#">Link 2</a></li>
-              <li><a class="dropdown-item" href="#">Link 3</a></li>
-              <li><a class="dropdown-item" href="#">Link 4</a></li>
-              <li><a class="dropdown-item" href="#">Link 5</a></li>
-              <li><a class="dropdown-item" href="#">Link 6</a></li>
-              <li><a class="dropdown-item" href="#">Link 6</a></li>
-              <li><a class="dropdown-item" href="#">Link 6</a></li>
-              <li><a class="dropdown-item" href="#">Link 6</a></li>
-              <li><a class="dropdown-item" href="#">Link 6</a></li>
-              <li><a class="dropdown-item" href="#">Link 6</a></li>
-              <li><a class="dropdown-item" href="#">Link 6</a></li>
-            </ul>
-          </li>
-          <li class=" dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">History</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Link 1</a></li>
-              <li><a class="dropdown-item" href="#">Link 2</a></li>
-              <li><a class="dropdown-item" href="#">Link 3</a></li>
-              <li><a class="dropdown-item" href="#">Link 4</a></li>
-              <li><a class="dropdown-item" href="#">Link 5</a></li>
-              <li><a class="dropdown-item" href="#">Link 6</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Contact Us</a>
-          </li>
-      </ul>
-      </nav>
-    </div>
-    </header>
+        <li class="nav-item dropdown" id="menu">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Constellation</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="aries.html">Aries</a></li>
+            <li><a class="dropdown-item" href="taurus.html">Taurus</a></li>
+            <li><a class="dropdown-item" href="gemini.html">Gemini</a></li>
+            <li><a class="dropdown-item" href="cancer.html">Cancer</a></li>
+            <li><a class="dropdown-item" href="leo.html">Leo</a></li>
+            <li><a class="dropdown-item" href="virgo.html">Virgo</a></li>
+            <li><a class="dropdown-item" href="libra.html">Libra</a></li>
+            <li><a class="dropdown-item" href="scorpio.html">Scorpio</a></li>
+            <li><a class="dropdown-item" href="sagi.html">Sagittarius</a></li>
+            <li><a class="dropdown-item" href="capricon.html">Capricorn</a></li>
+            <li><a class="dropdown-item" href="auarius.html">Aquarius</a></li>
+            <li><a class="dropdown-item" href="pisces.html">Pisces</a></li>
+          </ul>
+        </li>
+        <li class="nav-item" id="menu">
+          <a class="nav-link active" href="history.html">History</a>
+        </li>
+        <li class="nav-item" id="menu">
+          <a class="nav-link active" href="con">Contact Us</a>
+        </li>
+    </ul>
+  </nav>
+  <div style="position: fixed; bottom: 0; width: 100%; background-color: black; color: white;">
+    <marquee>
+      <span id="date"></span> | <span id="time"></span> | <span id="location"></span>
+    </marquee>
+  </div>
+  <h1 style="text-align: center"><strong>HALLEY COMET</strong></h1>
     <div class="main" id="overview"></div>
     <div class="row">
-      <div class="col-sm-2" style="background-color: black;" >
+      <div class="col-sm-2" >
       </div>
     <div class="col-sm-8" style="background-color: white;"> 
         <br></br>
@@ -105,16 +93,7 @@
         <br></br>
         <b style="color:black">It's appearance in the skies above Earth has been noted since ancient times, and was associated with both bad and good omens by many cultures. But in truth, its behavior is no different than any short-term visitor that swings by from time to time. And its visits have become entirely predictable!</b>
         <br></br>
-        <img src="Halley's_Comet_animation.gif" alt="">
-        <div id="demo" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
-        </div>
-    <div class="carousel-inner">
+        <img src="img/Halley's_Comet_animation.gif" alt="">
 
     <div>
       
@@ -128,7 +107,7 @@
   <div>In his 1705 publication, Synopsis of the Astronomy of Comets, Halley calculated the effect that Jupiter and Saturn's gravitational fields would have on the path of comets. Using these calculations and recorded observations made of comets, he was able to determine that a comet observed in 1682 followed the same path as a comet observed in 1607.</div>
   <div>Pairing this with another observation made in 1531, he concluded that these observations were all of the same comet, and predicted that it would return in another 76 years. His prediction proved to be correct, as it was seen on Christmas Day, 1758, by a German farmer and amateur astronomer named Johann Georg Palitzsch</div>
   <div>His predictions not only constituted the first successful test of Newtonian physics, it was also the first time that an object besides the planets was shown to be orbiting the Sun. Unfortunately for Halley, he did not live to see the comet's return (having died in 1742). But thanks to French astronomer Nicolas Louis de Lacaille, the comet was named in Halley's honor in 1759.</div>
-  <img src="Halley_Orionid.jpg" alt="">
+  <img src="img/Halley_Orionid.jpg" alt="">
   <div class="main" id="originOrbit"></div>
   <h1>Origin and orbit</h1>
   <div>Like all comets that take less than about 200 years to orbit the Sun, Halley's Comet is believed to have originated from the Kuiper Belt. Periodically, some of these blocks of rock and ice – which are essentially leftover matter from the formation of the Solar System some 4.6 billion years ago – are pulled deeper into the Solar System and becomes active comets.</div>
@@ -146,7 +125,7 @@
   <br>
   <div>Because its orbit comes close to Earth's in two places, Halley is the parent body of two meteor showers: the Eta Aquariids in early May, and the Orionids in late October. Observations conducted around the time of Halley's appearance in 1986, however, suggest that the Eta Aquarid meteor shower might not originate from Halley's Comet, although it might be perturbed by it.</div>
   <br>
-  <img src="Halley_comet.jpg" alt="">
+  <img src="img/Halley_comet.jpg" alt="">
   <div class="main" id="structureComposition"></div>
   <h1>Structure and composition</h1>
   <div>As Halley approaches the Sun, it expels jets of sublimating gas from its surface, which knock it very slightly off its orbital path. This process causes the comet to form a bright tail of ionized gas (ion tail), and a faint one made up of dust particles. The ion tail is also known as a coma (a small atmosphere) which spans up to 100,000 km across and consists of violatiles such as water, methane, ammonia and carbon dioxide.</div>
@@ -165,7 +144,7 @@
   <br>
   <div>While it is believed that Babylonian scribes recorded the appearance of Halley's Comet when it returned in 164 and 87 BCE, it's most famous appearance occurred shortly before the 1066 invasion of England by William the Conqueror. Whereas King Harold of England saw the comet as a bad omen, William and his forces interpreted it as a sign of their impending victory (at least according to legend).</div>
   <br>
-  <img src="Comet_Halley_from_London.png" alt="">
+  <img src="img/Comet_Halley_from_London.png" alt="">
   <div>Throughout the Middle Ages, the appearances of comets in the night sky were seen as heralds of bad news, indicating that either a person of royal standing had died, or that dark days lay ahead. This is perhaps owing to what was seen as the erratic and unpredictable behavior of comets, when compared to the Sun, the Moon and the stars</div>
   <br>
   <div>With the development of modern astronomy, this view of comets has been largely dispelled. However, there are many who still hold to the "doom and gloom" view of Halley's Comet, believing that it will strike the Earth at some point and trigger an Extinction Level Event, the likes of which has not been seen since the Dinosaurs.</div>
@@ -175,27 +154,28 @@
   <br>
   <div>In 2002, David C. Jewitt conducted a study that indicated that Halley will likely evaporate, or split in two, within the next few tens of thousands of years. Alternately, Jewitt predicted that it could survive long enough to be ejected from the Solar System entirely within a few hundred thousand years.</div>
   <br>
-  <img src="Halley_comet_2002.jpg" alt="">
+  <img src="img/Halley_comet_2002.jpg" alt="">
   <br>
   <div>Meanwhile, observations conducted by D.W. Hughes et al. suggests that Halley's nucleus has been reduced in mass by 80–90% over the last 2000–3000 revolutions (i.e. 150,000 – 230,000 years). By their estimations, it would not be surprising at all if the comet evaporated entirely within the next 300 revolutions or so (approx. 25,000 years).</div>
   <div>The last time Halley's Comet was seen was in 1986, which means it will not reappear until 2061. As always, some are choosing to prepare for the worst – believing its next pass will signal the end of life as we know it – while others are contemplating if they will live long enough to witness it.</div>
-  <img src="halley_nuclear.jpg" alt="">
+  <img src="img/halley_nuclear.jpg" alt="">
   <div class="main" id="magnetosphere"></div>
 </div> 
   <div class="col-sm-2" style="background-color: white;">
     <div id="outer">
-  <h4>On this page</h4>
-  <a href="#Discovery">Discovery</a>
-  <br></br>
-  <a href="#originOrbit">Origin and orbit</a>
-  <br></br>
-  <a href="#structureComposition">Structure and composition</a>
-  <br></br>
-  <a href="#role">Role in myths and superstitions</a>
-  <br></br>
-  <a href="#Disappearance">Disappearance</a>
-  <br></br>
-</div>
+      <h4>On this page</h4>
+      <a href="#Discovery">Discovery</a>
+      <br></br>
+      <a href="#originOrbit">Origin and orbit</a>
+      <br></br>
+      <a href="#structureComposition">Structure and composition</a>
+      <br></br>
+      <a href="#role">Role in myths and superstitions</a>
+      <br></br>
+      <a href="#Disappearance">Disappearance</a>
+      <br></br>
+    </div>
+  </div>
 </div>
 </body>
   <footer>
